@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Big Data | IT Svit</title>
+	<atom:link href="https://itsvit.com/tag/big-data/feed/" rel="self" type="application/rss+xml" />
+	<link>https://itsvit.com</link>
+	<description></description>
+	<lastBuildDate>Wed, 30 Sep 2020 08:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+
+<image>
+	<url>https://itsvit.com/wp-content/uploads/2019/07/Logo_2-150x150.png</url>
+	<title>Big Data | IT Svit</title>
+	<link>https://itsvit.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Why every business must analyze log data</title>
+		<link>https://itsvit.com/blog/why-every-business-must-analyze-log-data/</link>
+					<comments>https://itsvit.com/blog/why-every-business-must-analyze-log-data/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Mon, 28 Sep 2020 12:02:09 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=7833</guid>
+
+					<description><![CDATA[<p>When your systems work, everything is okay, but when something fails, you need to analyze the logs. We explain the importance of analyzing the server logs. Every business that interacts with its customers online has to know its IT operations are running smoothly. Monitoring is essential to ensure your systems work without issues — and [&#8230;]</p>
+The post <a href="https://itsvit.com/blog/why-every-business-must-analyze-log-data/">Why every business must analyze log data</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>When your systems work, everything is okay, but when something fails, you need to analyze the logs. We explain the importance of analyzing the server logs.</p>
+
+
+
+<span id="more-7833"></span>
+
+
+
+<p>Every business that interacts with its customers online has to know its IT operations are running smoothly. Monitoring is essential to ensure your systems work without issues — and analyzing server logs is what makes system improvements possible. Operational analysis of a company log data helps with ensuring the stable and uninterrupted performance of your business, and it can help with much more than just keeping the IT side of things in check.</p>
+
+
+
+<p>First of all, what are server logs? A server log file is automatically created by the system to store various records related to its operations. This way, in case any failure occurs, you have a detailed description of the chain of events that lead to it. Most servers create logs in Common Log Format or CLF, where each line represents one request. However, these logs are so detailed and convoluted that they are literally impossible to process manually, and they have to be deleted frequently, or they would start taking too much space.</p>
+
+
+
+<p>This is why server log analysis must happen on the fly and you must clearly understand what you are looking for, as “analyzing everything” is not feasible from the point of resource allocation cost-efficiency. The core areas where server log analysis can help you are IT operations, security, compliance, Business Intelligence, SEO promotion, etc.&nbsp;</p>
+
+
+
+<p>There are several main types of server logs, each of which performs some specific and important function.</p>
+
+
+
+<ul><li><b>Web server access logs</b> — records of what requests were made to your web servers, what pages were requested, what response codes were sent, etc. Analyzing those logs can lead to improving your website SEO visibility, purging fake links and fixing various website structure problems.</li><li><b>Server error logs</b> — records of various errors a server encountered during its operations and processing requests. These records can contain invaluable diagnostic data that will help optimize your IT system performance.</li><li><b>Agent and Referrer logs</b> — records of what web clients were used for accessing your server and where these requests originated from (the URL the agent was on before making a request to your server). This is useful for SEO optimization and analysis of the incoming traffic at your site.</li></ul>
+
+
+
+<p>There are several problems with server log analysis that hinder its efficiency.</p>
+
+
+
+<ol><li>Each server stores its logs on its hard drive by default</li><li>All systems write all kinds of data into their logs, 99% of which is irrelevant to the cause of the issue</li><li>Manually reading or searching for strings in these logs is impossible in terms of speed of processing</li><li>Logs are stored for a short period of time and then deleted to conserve computing resources</li><li>The reasons for an incident might be spread out across multiple logs, but only looking at them in full can help identify the cause of the issue.</li></ol>
+
+
+
+<p>Thus said, to ensure timely and efficient server log analysis, you should do it in real-time, collect various logs from multiple points in your system, process exorbitant volumes of data in full and represent the results in a form understandable by humans. There are tools and approaches that allow you to do exactly that.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="Lazy" loading="lazy" width="1140" height="595" src="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_log-data_tools_2.png" alt="" class="wp-image-7836" srcset="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_log-data_tools_2.png 1140w, https://itsvit.com/wp-content/uploads/2020/09/ItSvit_log-data_tools_2-768x401.png 768w" sizes="(max-width: 1140px) 100vw, 1140px" /></figure>
+
+
+
+<h2>Using tools like ELK stack, FluentD, Splunk and alternatives</h2>
+
+
+
+<p>There is a huge variety of tools built specifically to analyze server logs. ElasticSearch, Logstash and Kibana (known as ELK stack), FluentD, Splunk and their cloud platform-specific alternatives from Amazon Web Services, Google Cloud or Microsoft Azure, not to mention open-source and proprietary server monitoring, logging and alerting tools like Nagios, Icinga, Zabbix, etc. These tools can be configured to direct the logs from all your key system components to centralized storage and display the mission-critical data to a convenient dashboard.</p>
+
+
+
+<p>This approach allows your system engineers to keep their hands on the pulse of your business IT operations and be alerted at once if something goes awry. This is crucial for minimizing the impact of any server error — but unless your IT department works around the clock, they cannot ensure your systems are monitored 24/7. In that case, it is much better to analyze logs automatically, and for that, you need to deploy a Machine Learning model.</p>
+
+
+
+<h2>Building an efficient server log analytics system</h2>
+
+
+
+<p>Naturally, it is much easier to process all the logs in a centralized manner, so the very first thing to do is to deploy agents on all servers, which will reroute the logs to some centralized storage. Next, unless the systems and servers you run produce the logs in CLF, you would need to normalize them for further analysis by converting them to JSON-files. Now your data is prepared for <a href="https://itsvit.com/services/big-data/">Big Data</a> analytics.</p>
+
+
+
+<p>For example, when you started to analyze log data from your systems, you saw that the biggest CPU workload, RAM load and number of simultaneous connections to your application happen from 8 to 20 in the evening on weekdays and from 11 to 12 on weekend. Cloud platforms allow configuring scalability in such a way, that when the workload starts to rise, additional application instances are launched to meet the demand. This is done by selecting thresholds and hooking some actions to them.</p>
+
+
+
+<p>Let’s assume CPU load is around 40% during normal operation and it grows to 100% during workload spikes. A threshold can be set at 70% to launch an additional app instance to provide more CPU power and keep the load below 70%. When the workload spike is over (CPU load goes below 20%), spare instances are shut down to conserve the resources until the CPU load goes back to norm at 40%.</p>
+
+
+
+<p>However, this can happen only according to schedule. But what if the workload spike happens at an odd time, in the night, for example (which can mean the beginning of a DDoS attack)? Unless your systems can cope with the load, you run the risk of them slowing down, freezing and crashing — and all you would be able to do is analyze the logs in the morning to find out what caused the system breakdown.&nbsp;</p>
+
+
+
+<p>Besides, there are actually not so many incident response scenarios you can plan ahead using the cloud platform dashboard, and most of them can operate only in terms of scaling your operations up and down. Just imagine trying to cope with the DDoS attack by launching 2.000 additional application instances and running them for an hour, before finally crashing down. This way you are left with system failure and a fat invoice for consumed resources from your cloud hosting provider.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="Lazy" loading="lazy" width="1140" height="595" src="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_log-data_BigData_3.png" alt="" class="wp-image-7835" srcset="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_log-data_BigData_3.png 1140w, https://itsvit.com/wp-content/uploads/2020/09/ItSvit_log-data_BigData_3-768x401.png 768w" sizes="(max-width: 1140px) 100vw, 1140px" /></figure>
+
+
+
+<h2>Big Data analytics for real-time analysis of your logs</h2>
+
+
+
+<p>A Big Data scientist can select and train the most appropriate Machine Learning model for your business needs. The model will go through all the historical data available in the data set to find the common patterns — like CPU usage, number of simultaneous sessions,&nbsp; I/O throughput, RAM load, disc space usage, etc. Once the key patterns are identified, the model can be deployed to your systems along with a set of pre-configured scenarios of incident response. It will monitor the system and alert the operators of incidents — but it can also deal with them on itself!</p>
+
+
+
+<p>WIth Big Data analytics and Machine Learning model monitoring your infrastructure 24/7, the things are quite different. First of all, the ML model operates scripts, and you can script multiple incident response scenarios easily. This means that when the CPU load starts spiking up, the model will monitor a wide range of parameters to ensure it is a legitimate workload spike, even if it is unexpected (and not the beginning of a DDoS attack).</p>
+
+
+
+<p>Secondly, the ML model runs 24/7, so it can react accordingly to an incident occurring in the middle of the night. Most importantly, the ML model records every successful action (correct selection of the script, etc) and prioritizes these scenarios in the future. This leads to building fully self-healing infrastructure, where the issues are prevented before they occur or with minimal disruption of normal operations.</p>
+
+
+
+<h2>Conclusion: analyze your log data using Machine Learning</h2>
+
+
+
+<p>Thus said, using an ML model to analyze your IT server logs can help you ensure security, cost-efficiency and stable performance of your mission-critical systems. However, this is not the only application for Big Data analytics. The same approach can work for your sales department to analyze your customer churn, for your compliance and regulatory checks, even for your corporate training. When your company starts using Big Data analytics to analyze log data, applications for this approach can be easily found throughout all aspects of your business operations.</p>
+
+
+
+<p>The only question here is how to configure this process right. As a Managed Services Provider with 5+ years of experience in providing <a href="https://itsvit.com/services/devops/">DevOps services</a> and <a href="https://itsvit.com/services/big-data/big-data-analytics/">Big Data analytics</a>, IT Svit is glad to propose a full-scale operational analysis of a company. We can suggest ways to optimize your daily IT operations, remove system performance bottlenecks and proactively deal with the incidents before they become problems. We can help analyze your company logs and determine the best ways to improve your servers, making them scalable, resilient and secure.</p>
+
+
+
+<p>Would you like to see it happen for your business? Let us know, we are always happy to help!</p>The post <a href="https://itsvit.com/blog/why-every-business-must-analyze-log-data/">Why every business must analyze log data</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/why-every-business-must-analyze-log-data/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Cloud Composer vs Astronomer: what to choose?</title>
+		<link>https://itsvit.com/blog/google-cloud-composer-vs-astronomer-what-to-choose/</link>
+					<comments>https://itsvit.com/blog/google-cloud-composer-vs-astronomer-what-to-choose/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Thu, 03 Sep 2020 08:00:00 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<category><![CDATA[Cloud Computing]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=7816</guid>
+
+					<description><![CDATA[<p>Selecting the right approach to building distributed data pipelines requires finding a good managed cloud computing solution, so we compare Google Cloud Compose with Astronomer. Big Data processing was cloud platform-specific before the introduction of Airflow from Airbnb. The platform built on aggregating the venue booking offers from multiple providers across the globe obviously needed [&#8230;]</p>
+The post <a href="https://itsvit.com/blog/google-cloud-composer-vs-astronomer-what-to-choose/">Google Cloud Composer vs Astronomer: what to choose?</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>Selecting the right approach to building distributed data pipelines requires finding a good managed cloud computing solution, so we compare Google Cloud Compose with Astronomer.</p>
+
+
+
+<span id="more-7816"></span>
+
+
+
+<p><a href="https://itsvit.com/services/big-data/">Big Data</a> processing was cloud platform-specific before the introduction of Airflow from Airbnb. The platform built on aggregating the venue booking offers from multiple providers across the globe obviously needed a system for forming a holistic workflow orchestration landscape throughout many infrastructure providers. After the Airflow project was initially built and donated to Apache, a huge and passionate community has invested lots of effort into turning it the best available data pipeline orchestration tool around.</p>
+
+
+
+<p>However, handling complex data processing workflows is daunting enough to be worrying about the underlying infrastructure performance at the same time. This is why the need for managed Airflow services became obvious, and in 2018 two main competitors entered the field: Google Cloud Composer and Astronomer, which are microservice-architected hosted solutions that use Directed Acyclic Graphs or DAGs to manage data processing pipelines. Let’s dive deeper and compare these two alternatives, so you will be able to make an informed decision when selecting between them.&nbsp;</p>
+
+
+
+<p>Of course, nobody forces your hand to go for paid hosting platforms and you are perfectly allowed to download the latest stable Airflow build, master its documentation and configure the underlying infrastructure and processes yourself. However, this approach is not cost-efficient, as it is a time-consuming process of reinventing the wheel and following the footprints of either Astronomer or Cloud Composer, without having access to their wealth of technical expertise.</p>
+
+
+
+<h2><b>Cloud Composer vs Astronomer</b></h2>
+
+
+
+<p>We will compare Google Cloud Composer to Astronomer by several parameters:</p>
+
+
+
+<ol><li>Type of infrastructure used</li><li>Type of operators applied</li><li>DAG architecture and usage</li><li>Usage of code templates</li><li>Usage of RESTful APIs</li></ol>
+
+
+
+<p>These are the most distinguishing features, but Cloud Composer and Astronomer have lots in common:</p>
+
+
+
+<ul><li>Both have pre-configured deployment scenarios, so instead of spending days and weeks to build and configure the needed infrastructure, you get a working Airflow environment in minutes.</li><li>Both are managed services, so dedicated DevOps teams (Google Cloud or Astronomer Cloud respectively) handle the infrastructure maintenance tasks</li><li>Both enable horizontal scaling out of the box, so you can add new Airflow environments with ease and never worry about scaling and load balancing</li><li>Both provide CLI tools for DAG handling, though Cloud COmposer also provides a web UI dashboard for managing Airflow webserver and DAGs with ease.</li><li>Both provide an immense PyPI (Python Package Index) to allow you to leverage all the libraries needed in your data processing workflows.</li><li>Both work with a wide list of plugins to augment the operations you might need to perform</li><li>Both support email alerting and multiple monitoring features to help you keep the hand on the pulse of your systems, though Cloud Composer benefits from direct integration with StackDriver dashboards.</li><li>Both provide detailed developer documentation on the usage of their solutions, as well as paid support on subscription basis.&nbsp;</li></ul>
+
+
+
+<p>Thus said, let’s take a look at the differences between Cloud Composer and Astronomer.</p>
+
+
+
+<ol><li><b>Airflow infrastructure</b></li></ol>
+
+
+
+<figure class="wp-block-image size-large"><img loading="Lazy" loading="lazy" width="1141" height="269" src="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Airflow-infrastructure_2.png" alt="" class="wp-image-7822" srcset="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Airflow-infrastructure_2.png 1141w, https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Airflow-infrastructure_2-768x181.png 768w" sizes="(max-width: 1141px) 100vw, 1141px" /></figure>
+
+
+
+<p>Google Cloud Composer deploys Airflow projects to its Kubernetes clusters using Celery Executor to store Airflow Webserver, Redis message broker, Postgres for metadata, Flower for monitoring, as well as Airflow Scheduler and Workers as nodes on a Kubernetes cluster. After the infrastructure is designed and all connectors are configured, the same scheme can be used with Google, AWS, Azure, DigitalOcean or any on-prem Kubernetes cluster.</p>
+
+
+
+<p>By default, Astronomer deploys Airflow projects to GKE running on Astronomer cloud, but it has step-by-step guides to deploying your Airflow environments to any of the major cloud providers or on-prem infrastructure. Astronomer uses Mesos or Kubernetes Executors as alternatives to Celery.</p>
+
+
+
+<ol start="2"><li><b>Operators applied</b></li></ol>
+
+
+
+<figure class="wp-block-image size-large"><img loading="Lazy" loading="lazy" width="1141" height="269" src="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Operators-applied_3.png" alt="" class="wp-image-7821" srcset="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Operators-applied_3.png 1141w, https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Operators-applied_3-768x181.png 768w" sizes="(max-width: 1141px) 100vw, 1141px" /></figure>
+
+
+
+<p>Airflow supports a wide range of <a href="https://airflow.apache.org/_api/airflow/operators/index.html">common operators</a> and most of these are supported by Google. Cloud Composer also works with a wide range of plugins and allows configuring any webhooks you need to trigger the Airflow data pipeline execution.</p>
+
+
+
+<p>Astronomer supports the common plugins and custom operators, but the chance of you facing the need to develop another custom operator for your project is much higher with Astronomer. For example, while with Google 100% of DevOps work will be handled by the GCP team, working with the Astronomer team requires your in-house team to have a good understanding of DevOps workflows and tools. Otherwise (like when you need Airflow purely for data processing needs and have no in-house DevOps expertise), you will need to opt for the Astronomer Enterprise Cloud solution.</p>
+
+
+
+<ol start="3"><li><b>DAG architecture</b></li></ol>
+
+
+
+<figure class="wp-block-image size-large"><img loading="Lazy" loading="lazy" width="1141" height="269" src="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_DAG-architecture_4.png" alt="" class="wp-image-7820" srcset="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_DAG-architecture_4.png 1141w, https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_DAG-architecture_4-768x181.png 768w" sizes="(max-width: 1141px) 100vw, 1141px" /></figure>
+
+
+
+<p>Cloud Composer offers a convenient DAG management dashboard, where you can combine warious modules into DAG Runs and build workflow pipelines. Each of the individual DAG components is idempotent, meaning they are self-contained and have all their connectors, hooks and dependencies stored with them, so connecting two modules in the dashboard and dropping a ready file into a DAG folder on your Google Storage leads to automatically applying all the configurations. All DAGs are kept as simple as possible to minimize the risk of misconfigured interdependencies slowing or halting the performance of your Airflow pipelines.</p>
+
+
+
+<p>With Astronomer, you have a similar dashboard and a library of ready images, but there is no drag-and-drop option and all the configuration must be performed via Python scripts (R is announced but not implemented yet).</p>
+
+
+
+<ol start="4"><li><b>Code templates</b></li></ol>
+
+
+
+<figure class="wp-block-image size-large"><img loading="Lazy" loading="lazy" width="1141" height="269" src="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Code-templates_5.png" alt="" class="wp-image-7819" srcset="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Code-templates_5.png 1141w, https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_Code-templates_5-768x181.png 768w" sizes="(max-width: 1141px) 100vw, 1141px" /></figure>
+
+
+
+<p>The default template engine for Airflow is Jinja, well-known to most Python developers working with Flask framework. It allows building neat and flexible templates that reduce the hurdle of writing new code for each operation. However, using code templates adds another layer of complexity to software engineering — but it can be a stepping stone for pure web developers transitioning into data processing operations.</p>
+
+
+
+<p>With Google Cloud Composer, you get a library of templates to use, but the need in them is minimal, as it is a 100% managed service.</p>
+
+
+
+<p>With Astronomer, you are free to build the templates you need, and the Astronomer team (which includes two of the initial Airflow developers and other tech talents) works on constantly increasing the number of custom code templates, webhooks and connectors available to the customers.</p>
+
+
+
+<ol start="5"><li><b>RESTful API handling</b></li></ol>
+
+
+
+<figure class="wp-block-image size-large"><img loading="Lazy" loading="lazy" width="1141" height="269" src="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_RESTful-API-handling_6.png" alt="" class="wp-image-7818" srcset="https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_RESTful-API-handling_6.png 1141w, https://itsvit.com/wp-content/uploads/2020/09/ItSvit_GCC-vs-Astronomer_RESTful-API-handling_6-768x181.png 768w" sizes="(max-width: 1141px) 100vw, 1141px" /></figure>
+
+
+
+<p>Airflow uses RESTful APIs for interacting with external system modules. With Google Cloud, this means Google’s AI and ML products and system components, first and foremost. However, there are Google guides on moving your Airflow environments to external destinations or replacing </p>
+
+
+
+<p>With Astronomer, you are free to use these APIs from the get-go to deploy your Airflow projects to on-prem Kubernetes clusters, AWS, Azure, etc. — or include components from these cloud platforms into your infrastructure.</p>
+
+
+
+<p>Use cases for RESTful APIs with Airflow include the following scenarios:</p>
+
+
+
+<ul><li><a href="https://medium.com/google-cloud/using-airflow-experimental-rest-api-on-google-cloud-platform-cloud-composer-and-iap-9bd0260f095a">Spinning up Kubernetes clusters for data processing based on external https requests</a>.</li><li><a href="https://blog.godatadriven.com/airflow-experimental-rest-api">Launching a workflow based on a message appearing in your message broker or data storage</a>.</li><li><a href="https://medium.com/adobetech/adobe-experience-platform-orchestration-service-with-apache-airflow-952203723c0b">Building full-scale Machine Learning platforms for processing data on demand</a></li></ul>
+
+
+
+<p>Thus said, using REST API turns Airflow into a highly flexible solution that can serve multiple business needs in a wide variety of scenarios.</p>
+
+
+
+<h2><b>Conclusions: when to use Astronomer or Cloud Composer?</b></h2>
+
+
+
+<p>To wrap it up, let’s talk about what matters most for many businesses &#8211; costs. While Google showcases Cloud Composer pricing openly, the scheme of price formation is not quite transparent, as data storage and some other expenses are added to your overall monthly bill. However, various sources indicate the average price of a single Airflow environment to be around <b>$300/mo. with Google</b>. Of course, for this price, you get an end-to-end solution with in-depth help documentation and top-notch Google support.</p>
+
+
+
+<p>Astronomer Cloud is essentially the Google Cloud reseller, as GKE is its default destination for Airflow environments. However, <b>Astronomer charges only $110/mo.</b> to start an Airflow project with a Local Executor. The price is nearly three times lower — but the level of user convenience is not quite as high with Astronomer, both in terms of DAG configuration and in terms of availability of plugins, connectors and API integrations with other projects.</p>
+
+
+
+<p>Therefore, you can either go for rock-solid customer experience at quite an affordable price with GCP or select a much more affordable solution with more configuration overhead with Astronomer. keep in mind though, that both of these costs can multiply quite quickly, should you configure Airflow incorrectly,</p>
+
+
+
+<p>But what to do if your team does not have the DevOps expertise required to plan and execute complex distributed workflows and spending time waiting for <a href="https://itsvit.com/services/big-data/google-cloud-big-data/">Google Cloud</a> support response is too costly? Contact IT Svit, one of the leaders of the worldwide Managed <a href="https://itsvit.com/services/devops/">DevOps Services</a> market! We would be glad to help!</p>The post <a href="https://itsvit.com/blog/google-cloud-composer-vs-astronomer-what-to-choose/">Google Cloud Composer vs Astronomer: what to choose?</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/google-cloud-composer-vs-astronomer-what-to-choose/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>In-depth approach to DevOps: Self-healing infrastructure, Big Data, AI and more…</title>
+		<link>https://itsvit.com/blog/in-depth-approach-to-devops-self-healing-infrastructure-big-data-ai-and-more/</link>
+					<comments>https://itsvit.com/blog/in-depth-approach-to-devops-self-healing-infrastructure-big-data-ai-and-more/#respond</comments>
+		
+		<dc:creator><![CDATA[Oleg Batozhnyi]]></dc:creator>
+		<pubDate>Tue, 01 Oct 2019 10:40:15 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Artificial Intelligence]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<category><![CDATA[DevOps]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=6934</guid>
+
+					<description><![CDATA[<p>You have definitely heard about DevOps transformation and the benefits it can bring to your business. You know it all, yes? About cost-reduction due to transition to the cloud platforms, streamlined software delivery and reduced time-to-market due to implementation of CI/CD (Continuous Integration / Continuous Delivery) workflows and a general increase in productivity due to [&#8230;]</p>
+The post <a href="https://itsvit.com/blog/in-depth-approach-to-devops-self-healing-infrastructure-big-data-ai-and-more/">In-depth approach to DevOps: Self-healing infrastructure, Big Data, AI and more…</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>You have definitely heard about <a href="https://itsvit.com/services/devops/devops-transformation/">DevOps transformation</a> and the benefits it can bring to your business. You know it all, yes? About cost-reduction due to transition to the cloud platforms, streamlined software delivery and reduced time-to-market due to implementation of CI/CD (Continuous Integration / Continuous Delivery) workflows and a general increase in productivity due to DevOps culture of collaboration and communication between teams.</p>
+
+
+
+<span id="more-6934"></span>
+
+
+
+<p>There actually is much more to DevOps than an average article will tell you. However, in order to understand these depths, you must deal with much more complicated tasks, like building immutable infrastructure, enabling predictive and prescriptive Big Data analytics, training Artificial Intelligence and Machine Learning algorithms, enabling serverless operations, etc. Average companies can’t do this on their own, but they can order such projects from cloud vendors like AWS, GCP or MS Azure — or from Managed Services Providers, like IT Svit.</p>
+
+
+
+<p>What are the benefits of more complex DevOps workflows? We will explain this below, based on our experience as one of the leaders of the IT outsourcing market in Ukraine and one of the top 10 Managed Services Providers worldwide.</p>
+
+
+
+<figure class="wp-block-image"><img loading="Lazy" loading="lazy" width="752" height="395" src="https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-transformation_2-8.png" alt="" class="wp-image-6939" srcset="https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-transformation_2-8.png 752w, https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-transformation_2-8-300x158.png 300w" sizes="(max-width: 752px) 100vw, 752px" /></figure>
+
+
+
+<h2>Why do you need a DevOps transformation?</h2>
+
+
+
+<p>We all know what a Git-based workflow looks like. A developer writes a batch of code on their IDE and throws it over the wall to QA engineer for testing. If a testing environment with the required parameters is readily available, the QA specialist can start testing the code at once, if not — he has to ask an Ops engineer to configure the required testing environment. If an Ops engineer does not have anything else to do (which is very unlikely), he will configure the environment at once.</p>
+
+
+
+<p>Otherwise, it will be put into the queue with the rest of the tasks (in the best-case scenario, where a ticket will be created). In the worst-case scenario, the request will be a message in a chat, which will be overlooked or quickly forgotten, so that the configuration will start with some delay, and the testing will start with a significant delay as a result. Once the testing is done, the code is thrown over the wall back to the developer for bug fixing. Rinse, repeat. Release updates once or twice a year, enjoy post-release crashes, hotfixes and other attributes of Waterfall project management.</p>
+
+
+
+<p>This nightmare is well-known to all enterprise-grade software vendors and customers:</p>
+
+
+
+<ul><li>workflow rigidity, so new features cannot be added mid-development</li><li>exceeded deadlines, so that releases are quite slow-paced</li><li>features become outdated faster than they are released</li><li>products have very little interoperability</li><li>servers have limited resources and can lag during peak loads</li><li>long customer feedback loops</li><li>frustrated customers, who finally switch out to more flexible competitors</li></ul>
+
+
+
+<p>The Agile methodology of software delivery was intended to solve these challenges and DevOps culture, which is the practical implementation of Agile, was introduced to provide the tooling and workflows to make this possible.</p>
+
+
+
+<figure class="wp-block-image"><img loading="Lazy" loading="lazy" width="753" height="395" src="https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-culture_3-8.png" alt="" class="wp-image-6938" srcset="https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-culture_3-8.png 753w, https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-culture_3-8-300x157.png 300w" sizes="(max-width: 753px) 100vw, 753px" /></figure>
+
+
+
+<h2>DevOps culture: don’t mix the teams, fix the mindsets</h2>
+
+
+
+<p>DevOps culture is actually quite hard to define with a single phrase. An inexperienced explanation would describe it as “<em>mixing the Devs, the QA and the Ops engineers to form all-around capable teams that handle the whole process of software delivery</em>”. This is what a person would say, who has little practical experience and understanding of what DevOps actually is. Here is how IT Svit, a Managed Services Provider with 14+ years of expertise defines DevOps culture:</p>
+
+
+
+<blockquote class="wp-block-quote is-style-default"><p>DevOps methodology is a set of software delivery tools and best practices, used to combine the Dev and Ops parts of the software development lifecycle to ensure maximum performance, speed and reliability of all IT operations, workflows and pipelines to ensure uninterrupted positive end-user experience and achievement of business goals.</p></blockquote>
+
+
+
+<p>Thus said, the product life cycle is 90% production environment management. It would be simply strange to not take it into consideration when planning the software architecture and developing the product.&nbsp;</p>
+
+
+
+<p>Therefore, our DevOps workflows follow the motto of “<b><em>you built it — you run it</em></b>”, instead of throwing the responsibility for the product performance over the wall. When we engage in a new project, our DevOps system architects discuss the best ways to operate the future product or system and ensure its optimal performance. This way, the DevOps engineers help design the CI/CD pipelines needed to turn EVERY code commit into a new product build version. This is possible due to such DevOps principles:</p>
+
+
+
+<ul><li><b>Infrastructure as Code (IaC)</b> — approach to infrastructure configuration and management, when every desired environment state is codified in textual settings files, so-called “manifests”. These manifests are processed by Terraform and Kubernetes tools and are versioned like any other code — and are launched as simply. This way, once the manifest is configured by a DevOps engineer, it can be easily launched by the developer or QA engineer. IaC also ensures that the code operates in the same environment all the way from the IDE to production, to remove the “works on my machine” byword every software engineer hates.</li><li><b>Continuous Integration (CI) </b>— simple infrastructure provisioning due to IaC enables the developers to use automated unit testing, so each new batch of code can be tested at once after the commit. This allows the teams to deliver the code in short batches and make multiple new builds of the product each day — and even turn them into releases, should they need to. This is the reason for Google Chrome, Telegram App or Facebook to update nearly every time you launch them — they finish a sprint a day. Thus said, instead of developing a new product feature for a long time in its own long repo branch, CI allows to develop in short branches, test automatically and integrate new features into the main project trunk continuously and seamlessly.</li><li><b>Continuous Delivery (CD)</b> — multiple DevOps tools like Jenkins, CircleCI, Gitlab CI, Ansible and others help automate most of the routine software delivery and cloud infrastructure management operations, by turning the output of one operation into the input for another operation.<br>This way the code can automatically pass all stages of the software delivery:<ul><li>written in IDE and tested using the automated unit and integrity tests</li><li>committed from IDE to the project repo, </li><li>built and tested in the testing environment, </li><li>moved to staging environment in case of success, </li><li>tested by QA for regression and user acceptance, </li><li>released to production in case of success using rolling updates to avoid downtime</li><li>run and monitored in production.</li></ul></li></ul>
+
+
+
+<p>Continuous Delivery also helps to greatly speed up and simplify the production infrastructure management, as most of the operations can be completely automated. They must not necessarily be cloud-based, as the Kubernetes cluster can be configured atop bare-metal servers or deployed to an on-prem virtualized solution like OpenStack and OpenShift.</p>
+
+
+
+<figure class="wp-block-image"><img loading="Lazy" loading="lazy" width="753" height="394" src="https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-benefits_4-8.png" alt="" class="wp-image-6937" srcset="https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-benefits_4-8.png 753w, https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_DevOps-benefits_4-8-300x157.png 300w" sizes="(max-width: 753px) 100vw, 753px" /></figure>
+
+
+
+<h2>DevOps benefits: cloud, Docker containers, microservices, API interoperability</h2>
+
+
+
+<p>Thus said, DevOps workflows require virtualized infrastructure to run, so public cloud like Amazon Web Services or Google Cloud Platform is their natural habitat. However, many banking and financial enterprise-grade businesses prefer to run their on-prem cloud systems to ensure data security and operational proficiency. Nevertheless, most of the startups are perfectly fine with developing and running their products on public cloud platforms.</p>
+
+
+
+<p>Another important pillar of DevOps success is containerization. When your apps are running inside Docker containers — envelopes of code, containing all the needed runtime environment — your apps run exactly the same for all the customers. Besides, rebooting a container is much simpler than rebooting a virtual machine or a server, which dramatically increases the system resilience under heavy workloads.</p>
+
+
+
+<p>The next benefit of DevOps workflows is the ability to split monolithic application into microservices, which communicate through APIs. This way, each product feature can be run as a separate microservice, developed independently, configured and updated without affecting the performance of the rest of the product, etc. Besides, as the microservices interoperate with each other through APIs, they can be connected to third-party modules the same way. Thus said, microservices and APIs make integration with other apps much simpler.</p>
+
+
+
+<p>With the cloud transition finished, DevOps workflows and CI/CD pipelines established, all the shortcomings of Waterfall software development are dealt with:</p>
+
+
+
+<ul><li>workflow becomes flexible and new features can be added to the project in any of biweekly releases</li><li>predictable delivery schedule and timely releases</li><li>shorter time-to-market for new features, ensuring competitive edge for your business</li><li>monolithic apps are split to microservices that interact through APIs, so your product can be quite easily integrated with other parts of the software ecosystem</li><li>cloud computing resources are scalable, so the apps always perform well</li><li>customer feedback becomes a crucial source of input for product evolution and can be implemented in several weeks, not years</li><li>uninterrupted positive end-user experience, leading to increased customer loyalty and brand advocacy&nbsp;&nbsp;&nbsp;</li></ul>
+
+
+
+<p>Most of the businesses consider their business goals achieved once the DevOps transformation we described above is complete. However, there is much more capabilities with DevOps — and now we go in deeper.</p>
+
+
+
+<figure class="wp-block-image"><img loading="Lazy" loading="lazy" width="753" height="394" src="https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_Improved-DevOps-capabilities_5-8.png" alt="" class="wp-image-6940" srcset="https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_Improved-DevOps-capabilities_5-8.png 753w, https://itsvit.com/wp-content/uploads/2019/10/ItSvit_In-depth-approach-to-DevOps_Improved-DevOps-capabilities_5-8-300x157.png 300w" sizes="(max-width: 753px) 100vw, 753px" /></figure>
+
+
+
+<h2><b>Improved DevOps capabilities for your business</b></h2>
+
+
+
+<p>Once your systems start working, you begin accumulating a trove of machine-generated and user-submitted data. This data can be incredibly beneficial for your business — and again, not in a way an average Big Data prophet would tell you. Forget about “pouring all your incoming data streams into a single data lake and then applying BI algorithms to uncover hidden patterns”. Big Data does not work that way.&nbsp;</p>
+
+
+
+<p>The way it actually works is — specifically trained Machine Learning and Artificial Intelligence algorithms can determine normal system behavior in your data streams or normalize and visualize huge volumes of information contained in a variety of data types. Once these models are trained on historical data, they can be used to monitor the system performance and detect abnormal patterns (like a spike in system load, a beginning of a DDoS attack or a cybersecurity breach) real-time to allows your IT team to react immediately and minimize the damage or fully prevent it.</p>
+
+
+
+<p>This application of Big Data analytics is called AiOps and operates under two major paradigms: <b>predictive and prescriptive analytics</b>. When using predictive analytics, an AI algorithm learns the normal system operation patterns, most common issues and the best response scenarios. For example, if you are running a eCommerce platform, and the peak of usage is between 5 and 8 p.m. UTC, you might want to scale the system up (spin up more instances) to deal with the load, and scale it down (terminate the instances) once the peak is gone.</p>
+
+
+
+<p>Such a scenario can be configured even using your cloud platform admin dashboard. However, automated scenario will work every time, even when it is not needed — like during a holiday season, when most of the activity ceases — so it must be adjusted frequently. Quite the contrary, a trained Machine Learning model will recommend the DevOps engineer to spin up additional instances only when the CPU load will go up (even if it happens outside of usual peak time) and stop them once the peak load is over. This is what <b>predictive analytics</b> does, and it is much more cost-efficient and helps save a ton of effort on constant manual system monitoring and adjustment.</p>
+
+
+
+<p><b>Prescriptive analytics</b> works in a similar way, it just makes another step further and operates the infrastructure autonomously, only alerting the DevOps engineers when something unidentified is going on. This results in so called “<b>self-healing infrastructure</b>” where a failure of any container will result only in alerting the appropriate person, forming an error log with a screenshot and rebooting the faulty container without stopping the system operations even for a second. IT Svit has configured such systems for many of our SME customers, and it helped them greatly reduce the production environment monitoring complexity.</p>
+
+
+
+<p>Big Data can also be applied in Industry 4.0, where edge computing and trained ML models help operate autonomous factories and facilities; in agriculture, where normalization of the data on cattle diseases and treatments for them allows the farmers to identify the illnesses and apply the correct medications faster, without the need to wait for the vet; in marketing, where a trained AI algorithm can analyze a huge influx of news data and filter out only niche-relevant for the domain owner, like showing the latest news on eLearning on an educational portal — and much, much more.</p>
+
+
+
+<h2>Final thoughts on in-depth DevOps features</h2>
+
+
+
+<p>Even standard DevOps transformation would be very beneficial for your business. Should you decide to go for a deeper dive into advanced DevOps capabilities, and implement Big Data analytics — you would reap much more advantages and cut your expenses even more. The only challenge on this way is finding a reliable IT services partner, who will be able to provide an end-to-end solution for your project.</p>
+
+
+
+<p>IT Svit is such a partner, and this is proven by our leading positions in various business ratings,multiple positive IT Svit customer reviews, accolades, and acknowledgements from our partners. Should you want us to become your Managed Services Provider and help your next project become a success — contact us, we are always glad to assist! </p>The post <a href="https://itsvit.com/blog/in-depth-approach-to-devops-self-healing-infrastructure-big-data-ai-and-more/">In-depth approach to DevOps: Self-healing infrastructure, Big Data, AI and more…</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/in-depth-approach-to-devops-self-healing-infrastructure-big-data-ai-and-more/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Big Data: hot trends and implementation results of 2018</title>
+		<link>https://itsvit.com/blog/big-data-hot-trends-implementation-results-2018/</link>
+					<comments>https://itsvit.com/blog/big-data-hot-trends-implementation-results-2018/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Thu, 27 Dec 2018 12:29:01 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=4868</guid>
+
+					<description><![CDATA[<p>Here is a brief overview of Big Data trends, announcements and releases of 2018. There are new versions of old tools and brand new product released by technology providers; there are great benefits and new capabilities for multiple industries, from blockchain to big pharma and gas&#038;oil industry. Read this review to be aware of the latest Big Data successes!</p>
+The post <a href="https://itsvit.com/blog/big-data-hot-trends-implementation-results-2018/">Big Data: hot trends and implementation results of 2018</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>While 2018 is quickly coming to an end, data scientists and analysts worldwide look around to see what trends dominated the Big Data landscape and to learn the results of the business implementation of Big Data solutions.</p>
+<p><span id="more-4868"></span></p>
+<p>This article provides a brief overview of the opinions expressed by multiple data experts, analysts, mentors, and engineers. These comments were given <a href="https://www.kdnuggets.com/2017/12/big-data-main-developments-2017-key-trends-2018.html" target="_blank" rel="nofollow noopener noreferrer">nearly a year ago</a>, and it is interesting to see how many of them came true.</p>
+<p>First of all, while there is still much discussion regarding what Big Data is and how it is best used, many thought leaders insist the term is not correct anymore. We can simply say data, as it is by default implied and understood, that the scopes of data generated and processed by modern digital businesses are huge. This was reflected by Gartner back in 2015, who have removed the term Big Data from their <a href="https://www.kdnuggets.com/2015/08/gartner-2015-hype-cycle-big-data-is-out-machine-learning-is-in.html" target="_blank" rel="nofollow noopener noreferrer">Gartner Curve</a>.</p>
+<p>However, the vast majority of people are not thought leaders, and they still perceive Big Data as an umbrella term for Artificial Intelligence (AI) and Machine Learning (ML)-empowered business analytics. To be honest, this is the predominant way of applying Big Data solutions, as companies from oil and gas industry, telecom, pharmaceutics, consumer electronics, are actively attempting to implement IoT, AI, and ML capabilities into their products and services.</p>
+<p>I list some of these opinions here and later support them with brief descriptions of 2018 Big Data use cases from various industries. I do not recite the texts verbatim, but merely highlight the main idea of the message.</p>
+<h2><span id="trends">Big Data trends of 2018</span>: opinions from the visionaries</h2>
+<p><a href="https://www.linkedin.com/in/marcusborba/" target="_blank" rel="nofollow noopener noreferrer">Marcus Borba</a>, a CEO @ Borba Consulting, said that “Big Data stops being a buzzword and becomes the widely-accepted approach of adding IoT, AI algorithms and ML solutions to business intelligence and analytics processes. The <a href="https://itsvit.com/blog/big-data-becoming-data-driven-helps-startups-succeed-scale/" target="_blank" rel="nofollow noopener noreferrer">startups become data-driven</a> and implement the cloud-first mode of operations for their data analytics, finding new ways to drive more value to their businesses and deliver more value to their customers.”</p>
+<p><a href="https://www.linkedin.com/in/craigbrownphd/" target="_blank" rel="nofollow noopener noreferrer">Craig Brown, Ph.D.</a>, a mentor, technology speaker, coach, and Big Data expert said that “in 2017 the companies have largely reassessed their Big Data initiatives to move away from Hadoop and concentrate more on <a href="https://itsvit.com/blog/big-data-visualization-principles/" target="_blank" rel="nofollow noopener noreferrer">Big Data visualization</a>, management and implementing hybrid cloud environments for data processing. He predicted 2018 to be the year when data streaming and on-the-fly analytics will soar, along with more detailed and productive NoSQL usage.”</p>
+<p><a href="https://www.linkedin.com/in/metabrown" target="_blank" rel="nofollow noopener noreferrer">Meta S. Brown</a>, an author of Data Mining for Dummies expressed her view that “on the example of <a href="https://www.bbc.com/news/world-35954224" target="_blank" rel="nofollow noopener noreferrer">Panama papers</a> we can see, how modern data analytics can uncover the corruption among the powerful and the rich. Thus said, the success in using the data analytics depends not on magic, but on the clearly defined process, diligence and the will to cooperate from all the parties involved.”</p>
+<p><a href="https://www.linkedin.com/in/vasant-dhar-931175/" target="_blank" rel="nofollow noopener noreferrer">Vasant Dhar</a>, a Professor at NYU, the chief editor of “Big Data” magazine said that “2018 saw the general increase of Big Data adoption in sciences, healthcare, government, and other industries. Cloud-based predictive analytics help to increase business efficiency, while legal regulations concentrate on security, data governance, and performance stability.”</p>
+<p><a href="https://www.linkedin.com/in/tamaradull/" target="_blank" rel="nofollow noopener noreferrer">Tamara Dull</a>, the Director of SAS Best Practices, states “2018 will be a busy year when we will continue to go along the IoT/ML/AI path while trying to understand where it is best to store and process the data, both long-term and short-term. Will it be the on-prem or hybrid cloud, edge computing or private cloud? Time will show.”</p>
+<p><a href="https://www.linkedin.com/in/schmarzo/" target="_blank" rel="nofollow noopener noreferrer">William Schmarzo</a> also called “the Dean of Big Data” is a CTO @ Dell EMC Services Big Data. He said that “Big Data analytics will continue to transform from an IT dept task into a business doctrine. The results of correct data analytics can generate millions in added value, while their marginal cost of reuse is literally zero. Big Data has huge economic potential and is a valuable asset — the one we can receive for free with literally no CAPEX or OPEX and must learn to use most efficiently. Big Data is the new sun for the business.”</p>
+<p><a href="https://www.linkedin.com/in/markvanrijmenam/" target="_blank" rel="nofollow noopener noreferrer">Mark Van Rijmenam</a>, the founder of Datafloq and internationally renowned <a href="https://itsvit.com/blog/blockchain-big-data-match-made-heavens/" target="_blank" rel="nofollow noopener noreferrer">Big Data &amp; blockchain</a> strategist, stated that “2018 will be an exciting year when the AI will become more intelligent and ICOs will become the true arms race. Once the AI stops being trained on human data and the last possibilities of biased opinion are eliminated, the businesses will be able to implement the prescriptive analytics and reap the benefits provided by this latest stage of Big Data analytics.”</p>
+<p><a href="https://www.linkedin.com/in/mateizaharia/" target="_blank" rel="nofollow noopener noreferrer">Matei Zaharia</a>, one of the authors of Apache Spark project and the Chief Technologist at Databricks said that “throughout 2017 and 2018 we saw the stable growth in cloud-based analytics deployment. Multiple cloud vendors constantly improve their existing cloud Big Data offers and increase their range. The industry moves to understand that cloud-native data analytics is not the forklift for the on-prem data stores, but leveraging PAYG billing and serverless computing in addition to scalable cloud storage moves the data analytics to the whole new level.”</p>
+<h2><span id="cases">Big Data use cases</span> of 2018</h2>
+<p>These thoughts and opinions were proven to be true, and below I list several business use cases, highlighting the growing adoption of data-driven business analytics.</p>
+<h3>Using GPUs to process Big Data with superior speed</h3>
+<p>Standard GPUs are multi-threaded chips with at least 5,000 computing cores intended to do the image rendering, vector processing and high-speed computations required for gaming. <a href="https://www.linkedin.com/in/galami/" target="_blank" rel="nofollow noopener noreferrer">Ami Gal</a>, CEO and co-founder of SQream proposed to<a href="http://www.dataversity.net/data-warehouses-gpus-big-data-high-speed/" target="_blank" rel="nofollow noopener noreferrer"> use GPUs instead of CPUs for high-speed data processing</a>. If the GPU works as intended, but the vectors it processes are actually in a DB with an SQL query on top, this superior speed can be put to good use in data analytics.</p>
+<p>The main challenge was to find a DB able to work atop a GPU, and they had to build their own solution for that. Their solution proved to be an efficient approach when a telecom operator with more than 40 million active subscribers wanted to speed up their Business Analytics. The existing MPP Data Warehouse took <b>1-3 minutes</b> to complete a simple query against a <b>14 TB database</b> of customer profiles, call records and other data. SQream DB did the job in merely <b>8 seconds</b> while being able to <b>scale to 40 TBs</b> with ease.</p>
+<h3>Big Data promises big revenues for oil and gas industry</h3>
+<p><a href="http://www.dataversity.net/data-radically-shifts-way-oil-gas-industry-approaches-operational-efficiency/" target="_blank" rel="nofollow noopener noreferrer">Geological exploration</a> nowadays had evolved far from simply boring the test apertures in an attempt to locate oil or gas fields. Huge volumes of 2D, 3D, and 4D seismic images are processed to identify the picture of the oil/gas deposits below and maximize the chance of finding productive seismic trace signatures — the sweet spots for boring, which were not identifiable earlier. Thus said, IoT infrastructure, edge computing, ML models and Big Data analytics solutions when combined can minimize the oil &amp; gas industry expenses and maximize its revenues. It even allows using the public weather and geological data to predict oil &amp; gas fields without even performing the costly exploration.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-4869" src="https://itsvit.com/wp-content/uploads/2018/12/ITSvit_Review_Big_Data_2018_2.jpg" alt="Big Data projects worldwide in 2018" width="1200" height="628" /></p>
+<p>The other important area of Big Data application in the oil and gas industry is maximizing the cost-efficiency ratio of all operations. IoT sensors on the bores and pipes, on the pumping stations and scattered across the oil drilling fields help analyze the efficiency of the equipment used and maximize the ROI. It’s better to replace the bore head for a more sturdy one immediately upon meeting the dense granite layer than pay for the whole equipment repairs and overhaul if the issue is discovered too late.</p>
+<p>Security of oil processing is the third area of application, as smart cameras and sensors can analyze the normal oil processing patterns and alert the operators/stop the operations immediately should something go awry. This is a huge leap forward from the post-incident analysis and external alerting systems widely adopted in the earlier days.</p>
+<h3>Big Data in pharmaceutics: a wide range of applications</h3>
+<p>Pharmaceutical industry sits on the troves of data and is actively trying to put them to good use through the power of predictive analytics based on Big Data. The use cases in question might include personalized prescriptions, the correct choice of patients for clinical trials, prescription volume correlation, as well as auxiliary activities like logistics, marketing and sales of new medications. The main complication is the strict need to comply with multiple regulations regarding personal data of patients and the fact that sales vastly depend on the physician’s recommendations.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-4873" src="https://itsvit.com/wp-content/uploads/2018/12/ITSvit_Review_Big_Data_2018_6.jpg" alt="Big Data in the pharmaceutical industry" width="1200" height="628" /></p>
+<p>Here are some ways big pharma companies try to overcome these challenges with Big Data.</p>
+<ul>
+<li>A <b>personalized recommendation engine</b> could be built to leverage the 360° view of the patients, including their past conditions, family history, etc. in issuing personalized prescriptions tailored for their specific cases.</li>
+<li>A mechanism of <b>selecting the patients for clinical trials</b> can be vastly improved from the existing bureaucratic approach. If the AI algorithm is able to identify the individuals that can benefit most from the drug tests, or add some underrepresented group that did not previously partake in the research, the value of the final results will be greatly increased.</li>
+<li>Regression networks can be used to test the possible interactions of various chemical concoctions during the <b>experimental drug development</b>. What takes decades nowadays, can be shortened to years or months, while significantly reducing the potential risk to the test patients.</li>
+<li>People don’t buy drugs if they are not ill, and once they do — they buy <b>what doctor prescribes them</b>. As the disease spread is not linear, it is essential to employ predictive analytics to assess how different physicians prescribe the meds and reward the brand advocates to further bolster sales. Such analytics helps pick the hidden fruits instead of engaging in irritating price wars.</li>
+<li>Ongoing training of the ML models involved is required to <b>ensure the predictive analytics is at its maximum efficiency</b>. The cost of error might be a human life, so constantly improving the accuracy of predictions is essential for the pharma industry.</li>
+</ul>
+<p>By leveraging all the publicly available data in addition to the internal goldmines of knowledge, the pharmaceutical companies can identify the previously underserved areas of interest and use them to their full potential.</p>
+<h3>Blockchain and Big Data — a great match</h3>
+<p>I have described the projects combining <a href="https://itsvit.com/blog/blockchain-big-data-match-made-heavens/" target="_blank" rel="nofollow noopener noreferrer">blockchain and Big Data</a> nearly a year ago. Since then, multiple pilot projects were launched worldwide in industries like real estate and energy sector, insurance, and financial services, banking and healthcare. Literally, every business sector can benefit from immutable, transparent and consistent data. This also makes data much more valuable, as the analysis is able to detect the patterns and insights that were not observable previously.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-4870" src="https://itsvit.com/wp-content/uploads/2018/12/ITSvit_Review_Big_Data_2018_3.jpg" alt="Blockchain and Big Data projects in 2018" width="1200" height="628" /></p>
+<h2><span id="projects">Notorious Big Data projects</span> of 2018</h2>
+<p>Aside from purely business applications, there are multiple prominent Big Data projects that are currently in active development or are just starting. I briefly list such Big Data accomplishments (or revelations) below.</p>
+<ul>
+<li><a href="https://blogs.nvidia.com/blog/2018/12/03/physx-high-fidelity-open-source/" target="_blank" rel="nofollow noopener noreferrer">Nvidia makes their PhysX engine open-source</a> under BSD-3 license to bolster the game development community.<br />
+<a href="https://www.theverge.com/2018/12/3/18121198/ai-generated-video-game-graphics-nvidia-driving-demo-neurips" target="_blank" rel="nofollow noopener noreferrer">Nvidia moves from physically rendered to AI-generated images</a> usage in their game development initiatives.<br />
+<img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-4871" src="https://itsvit.com/wp-content/uploads/2018/12/ITSvit_Review_Big_Data_2018_4.jpg" alt="AI-rendered images from Nvidia" width="1200" height="628" /></li>
+<li><a href="https://aws.amazon.com/ru/blogs/aws/aws-ground-station-ingest-and-process-data-from-orbiting-satellites/" target="_blank" rel="nofollow noopener noreferrer">AWS introduces the service for direct data collection from satellites</a>, allowing the businesses to capture the data from their satellites and process it without even leaving their AWS accounts.</li>
+<li><a href="https://github.com/keras-team/keras/releases/tag/2.2.3" target="_blank" rel="nofollow noopener noreferrer">Keras, the machine learning platform for humans</a>, is actively developed by a passionate community. It saw a major update (v2.2.0) in June of 2018 and is consistently improved further.</li>
+<li><a href="https://github.com/opencv/opencv/wiki/ChangeLog" target="_blank" rel="nofollow noopener noreferrer">OpenCV, a popular computer vision algorithm</a> was updated to v4.0.0, providing a multitude of new features, as well as performance improvements.</li>
+<li><a href="https://venturebeat.com/2018/11/21/googles-duplex-is-rolling-out-to-pixel-owners-heres-how-it-works/" target="_blank" rel="nofollow noopener noreferrer">Google presents Google Duplex</a>, an innovative service for Google Pixel owners, which enables voice calling and booking hotel rooms, restaurant tables, and other amenities. It might not seem important yet, but it is sure to gain much more traction over the next few years.</li>
+</ul>
+<h2><span id="conclusions">Final thoughts</span> on Big Data trends, use cases, and projects of 2018</h2>
+<p>Like any other important industry, Big Data analytics does not remain idle. It constantly grows and evolves, presenting the businesses with ever-improving tools and approaches to data analysis, enabling the companies of all sizes to leverage the latest tech and best practices to drive more value to their customers. Hopefully, this material will help you better understand the potential of Big Data for your business.</p>
+<p>Did I miss anything important in the field of Big Data that occurred in 2018? Please share your thoughts in the comments below!</p>The post <a href="https://itsvit.com/blog/big-data-hot-trends-implementation-results-2018/">Big Data: hot trends and implementation results of 2018</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/big-data-hot-trends-implementation-results-2018/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How Big Data can help the banking sector regain the customer&#8217;s trust</title>
+		<link>https://itsvit.com/blog/how-big-data-can-help-the-banking-sector-regain-the-customers-trust/</link>
+					<comments>https://itsvit.com/blog/how-big-data-can-help-the-banking-sector-regain-the-customers-trust/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Tue, 17 Jul 2018 13:01:50 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=3486</guid>
+
+					<description><![CDATA[<p>Banks literally sit on goldmines of data yet they are rarely able to leverage it to the fullest extent. By knowing multiple details about their customers, the banks can make better-informed asset management decisions, more personalized product offers, assess loan risks, fight fraud proactively instead of reacting to it and achieve a plenty of other goals.</p>
+The post <a href="https://itsvit.com/blog/how-big-data-can-help-the-banking-sector-regain-the-customers-trust/">How Big Data can help the banking sector regain the customer’s trust</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>The banks are meant to be the stewards of the customers’ money, yet after the financial crisis of 2008 quite a few people don&#8217;t trust them. Here is how Big Data can help the banks regain the customer’s trust.</p>
+<p><span id="more-3486"></span></p>
+<p>According to <a href="https://www.edelman.com/post/accelerating-trust-in-financial-services" target="_blank" rel="nofollow noopener noreferrer">Edelman’s Trust Barometer survey of 2017</a> the US citizens in general begin to trust the banks more (<b>60%</b> growing 6% as compared to <b>54%</b> back in 2016), mostly due to the introduction of multiple regulatory acts aimed at protecting the banking customers, and continuous issuance of multi-hundred million dollar fees on the trespassers and badly acting banks. The results seem positive, yet there is much room for improvement, as the results are only slightly above half.</p>
+<p>On the other hand, fintech companies seem to enjoy somewhat higher levels of trust from their customers, 72% for mobile and 64% for blockchain startups respectively. This is most likely mainly due to the usage of modern technology, yet this is not the sole reason, nor is it the main one.</p>
+<blockquote><p><b>The main reason for higher levels of trust to fintech startups is their attitude towards the customers, transparency of operations and easiness of their product usage.</b></p></blockquote>
+<p>The banking sector could — and, actually, must — use the modern technology to show the customers the banks are after their best interests, not after own margins. <a href="https://itsvit.com/our-services/big-data-and-data-science/" target="_blank" rel="nofollow noopener noreferrer">Big Data</a> can be used to do this in several ways.</p>
+<h2>Regaining the trust of the past customers using Big Data</h2>
+<p>The main customers of the banks are businesses and organizations that mostly require asset management, loan issuance, insurance services and credit portfolio management. Many banks have lost their customers to competitors due to the inadequate level of customer service, prolonged time frames of credit score evaluation and loan approval, etc. However, this might not be the end, as sometimes the competitor act no better and the customers are frustrated with their services.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3491" src="https://itsvit.com/wp-content/uploads/2018/07/trust-banking-sector.jpg" alt="Regain trust in banking sector using Big Data" width="1200" height="628" /></p>
+<p>Using the big data mining to improve the customer experience the banks can evaluate the current financial position of their past customers and determine if they are in need of the next round of investments. They can generate the risk assessment profile automatically and approach their potential customers with personalized offers made at the right moment. If the business can see that it’s valued, its needs are the priority and the offer is made with its best interests at heart, this can help regain their trust and reestablish the business relations.</p>
+<h2 id="asset">Using Big Data for improved asset management</h2>
+<p>Many companies rely on stock trading as an important source of income, while many other specialize in asset management. The banks can do this too, and they can actually do this much better. As all the company personnel is usually served in one bank for the ease of billing, the bank’s <a href="https://itsvit.com/blog/5-use-cases-machine-learning-banking-industry/" target="_blank" rel="nofollow noopener noreferrer">Big Data analytics platform</a> can have access to all the company employees spending patterns, credit scores, and ongoing financial transactions. This might be essential in discovering the best opportunities for asset management, offering hot-fix solutions in the time of crisis, or simply informing the company C-suite if there is any foul play with the company assets in place.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3490" src="https://itsvit.com/wp-content/uploads/2018/07/improved-asset-management.jpg" alt="Improved Asset Management" width="1200" height="628" /></p>
+<p>Another important aspect of this situation is that the banking institutions can provide personalized auxiliary services and financial products, like individual retirement accounts (IRA), 401(k) funds and other <a href="https://itsvit.com/blog/top-5-machine-learning-use-cases-financial-industry/" target="_blank" rel="nofollow noopener noreferrer">financial services based on Machine Learning</a>.</p>
+<h2 id="banking">Using Big Data to improve the banking services</h2>
+<p>The last but not the least important of the possible Big Data applications for improving the banking sector services and regaining the customer’s trust is collecting and analyzing the data on how the customers actually use the services. By performing an ongoing monitoring, collection and processing of the data of the location, time, longevity, and frequency of certain features usage, the banks can understand if their web or mobile applications meet the expectations of their customers and what can be done to improve the experience.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3489" src="https://itsvit.com/wp-content/uploads/2018/07/improve-banking-services.jpg" alt="Improved banking services" width="1200" height="628" /></p>
+<p>Good old surveys can do this too, of course, but let’s be honest — if you just wasted half an hour trying to book a ticket for an urgent business trip, would you be glad and calm to provide the explanations of the situation in a post-operation survey? Obviously, not. Instead, the use of <a href="https://itsvit.com/blog/big-data-analytics-banking-sector/" target="_blank" rel="nofollow noopener noreferrer">Big Data analytics in banking</a> helps to discover the patterns the customers follow while navigating the bank’s website or using the mobile app. Which sections and functions are clear and simple to use, and which areas need improvement. Based on this data, the banks can improve their websites and apps rapidly, thus shortening the feedback loops without even asking for feedback.</p>
+<p>Doing it this way ensures the next time the customer processes their request they do not meet any troubles and their customer experience is positive. Continuous work in this direction helps build the brand loyalty and ensure the word-of-mouth advocacy, the most effective marketing strategy ever.</p>
+<h2 id="final">Final thoughts on how the use of Big Data can help the banks</h2>
+<p>All of this is possible only if the banks follow several simple rules, of course. The rules are pretty obvious, yet somehow they are not prioritized by the majority of the players in the banking industry.</p>
+<ul>
+<li><b>The customer always comes first</b>. Clearly show the customers their financial well-being is the main purpose, not meeting the monthly income threshold.</li>
+<li><b>Personalize the offers</b>. An offer made at the right moment is worth a hundred made at the wrong time. Spamming the customers with unneeded incentives is bad; offering them a helping hand in their time of need is a great deed.</li>
+<li><b>The banking services should conform to the fast-paced needs and ways of the modern customers</b>. The operations workflow should be convenient, mobile banking apps should be intuitive and informative, and the overall user experience should be positive.</li>
+</ul>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3488" src="https://itsvit.com/wp-content/uploads/2018/07/how-to-use-big-data.jpg" alt="How to use Big Data in banking" width="1200" height="628" /></p>
+<p>What if the banking industry does not accept these principles and continues to concentrate on their margins, instead of putting the customer’s best interests first? Well… there are a plenty of startups and fintech businesses that will gladly receive the frustrated customers, and the banks will have to either transform or perish.</p>
+<p>What are your thoughts on the matter? Do you think Big Data can help the banks regain the customer’s trust? And, most importantly, will the banks do what is needed? Please share your opinion in the comments below!</p>The post <a href="https://itsvit.com/blog/how-big-data-can-help-the-banking-sector-regain-the-customers-trust/">How Big Data can help the banking sector regain the customer’s trust</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/how-big-data-can-help-the-banking-sector-regain-the-customers-trust/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>3 pillars of digital transformation: Cloud, DevOps, Big Data</title>
+		<link>https://itsvit.com/blog/3-pillars-digital-transformation-cloud-devops-big-data/</link>
+					<comments>https://itsvit.com/blog/3-pillars-digital-transformation-cloud-devops-big-data/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Thu, 07 Jun 2018 12:41:04 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<category><![CDATA[Cloud Computing]]></category>
+		<category><![CDATA[DevOps]]></category>
+		<guid isPermaLink="false">http://0.0.0.0:8080/?p=3281</guid>
+
+					<description><![CDATA[<p>Digital transformation is a process of integrating the latest technology to ensure maximum efficiency and competitiveness of existing workflows. Cloud, DevOps and Big Data make it happen. It’s natural for the technology companies to utilize the top-notch tools and practices, as this is the only way to remain competitive for them. Such companies bask in [&#8230;]</p>
+The post <a href="https://itsvit.com/blog/3-pillars-digital-transformation-cloud-devops-big-data/">3 pillars of digital transformation: Cloud, DevOps, Big Data</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>Digital transformation is a process of integrating the latest technology to ensure maximum efficiency and competitiveness of existing workflows. Cloud, DevOps and Big Data make it happen.<br />
+<span id="more-3281"></span>It’s natural for the technology companies to utilize the top-notch tools and practices, as this is the only way to remain competitive for them. Such companies bask in the light of the latest trends and are quick to adopt DevOps methodology, cloud technology and reap the <a href="https://itsvit.com/blog/big-data-becoming-data-driven-helps-startups-succeed-scale/" target="_blank" rel="nofollow noopener noreferrer">benefits of becoming data-driven</a> through implementing in-depth <a href="https://itsvit.com/our-services/big-data-and-data-science/" target="_blank" rel="nofollow noopener noreferrer">Big Data analytics</a>.</p>
+<p>On the other side, businesses and organizations in multiple industries outside the IT, like <a href="https://www.forbes.com/sites/danielnewman/2017/03/07/top-five-digital-transformation-trends-in-healthcare" target="_blank" rel="nofollow noopener noreferrer">healthcare</a>, <a href="https://www.forbes.com/sites/danielnewman/2017/05/09/top-5-digital-transformation-trends-in-financial-services" target="_blank" rel="nofollow noopener noreferrer">financial services</a>, and <a href="https://www.forbes.com/sites/danielnewman/2017/06/29/top-6-digital-transformation-trends-in-government" target="_blank" rel="nofollow noopener noreferrer">government</a> are putting significant effort into undergoing the <a href="https://itsvit.com/blog/cutting-edge-trends-2018-cloud-big-data-ai-ml-iot/" target="_blank" rel="nofollow noopener noreferrer">digital transformation</a>. For them the task is much more harsh, as they face both technological and cultural challenges there, not to mention the need for reliable customer service and security.</p>
+<p><b>See also</b>: <a href="https://itsvit.com/blog/devops-banks-whats-hidden-plain-sight/" target="_blank" rel="nofollow noopener noreferrer">DevOps in Banks: What’s Hidden in Plain Sight</a></p>
+<p>Below we list 3 parts of successful digital transformation and why they matter.</p>
+<h2 id="computing">Cloud computing: the basis of the successful digital transformation</h2>
+<p>Cloud service providers have multiplied and their offers have matured significantly over the last decade. <a href="https://itsvit.com/blog/aws-vs-ms-azure-cloud-provider-choose/" target="_blank" rel="nofollow noopener noreferrer">Amazon Web Services or Microsoft Azure</a>, Google Cloud Platform, DigitalOcean or IBM Cloud — these are the major players in the cloud space, able to become a safe haven for the mission-critical systems and processes of any business or organization.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3279" src="https://itsvit.com/wp-content/uploads/2018/06/Pillars-of-digital-transformation-ITSvit-Cloud.jpg" alt="3 pillars of digital transformation: Cloud, DevOps, Big Data 2" width="1200" height="628"></p>
+<p>These cloud service providers now deliver robust, functional and secure services. <a href="http://www.nasdaq.com/article/amazons-aws-is-now-hosting-the-defense-departments-most-classified-data-cm846402" target="_blank" rel="nofollow noopener noreferrer">AWS hosting the DoD’s most vital data</a> and <a href="https://www.theatlantic.com/technology/archive/2014/07/the-details-about-the-cias-deal-with-amazon/374632/" target="_blank" rel="nofollow noopener noreferrer">winning a $600 million contract with CIA</a> is surely a solid proof of the trust and importance governmental agencies put into utilizing the cloud for their operations.</p>
+<p>Unfortunately, moving the enterprise data, systems and infrastructure to the cloud cannot happen overnight, and sometimes it’s outright impossible. In this case, the existing IT infrastructure, workflows, and services should be audited, classified and replicated in the cloud from scratch by a trustworthy contractor. DevOps methodology makes this possible, and here is how it works.</p>
+<h2 id="devops">DevOps: the way to make the cloud infrastructure work better</h2>
+<p><a href="https://itsvit.com/blog/10-subtle-superpowers-devops/" target="_blank" rel="nofollow noopener noreferrer">DevOps</a> is the evolvement of Agile software delivery methodology, emphasizing rather small cross-functional teams of cloud automation engineers, who are able to provision the cloud infrastructure for any products or services and ensure it runs without issues.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3280" src="https://itsvit.com/wp-content/uploads/2018/06/Pillars-of-digital-transformation-ITSvit-DevOps.jpg" alt="3 pillars of digital transformation: Cloud, DevOps, Big Data 3" width="1200" height="628"></p>
+<p>This is possible through the use of polished DevOps tools (like <a href="https://itsvit.com/blog/what-is-terraform-and-why-it-rocks/" target="_blank" rel="nofollow noopener noreferrer">Terraform</a>, which allows simple creation and management of cloud-agnostic <a href="https://blog.codeship.com/immutable-infrastructure/" target="_blank" rel="nofollow noopener noreferrer">immutable infrastructure</a> for any purposes; <a href="https://itsvit.com/blog/why-when-and-how-do-we-use-docker/" target="_blank" rel="nofollow noopener noreferrer">Docker</a>, allowing to package any application and all the software needed to run it into containers and run these containers in any environments; and <a href="https://itsvit.com/blog/kubernetes-manage-infrastructure-like-giant/" target="_blank" rel="nofollow noopener noreferrer">Kubernetes</a>, which manages these containers to ensure uninterrupted and reliable operations of your systems).</p>
+<p><b>See also</b>: <a href="https://itsvit.com/blog/demystified-5-myths-devops-services/" target="_blank" rel="nofollow noopener noreferrer">Demystified: 5 Myths of DevOps Services</a></p>
+<p>Such a DevOps support team can be trained in-house in the Centers of Excellence or hired as contractors for delivering <a href="https://itsvit.com/our-services/devops-service-provider/" target="_blank" rel="nofollow noopener noreferrer">DevOps-as-a-Service</a>. The result will be the increased predictability and reliability of operations, better customer satisfaction, and increased loyalty, as well as much better responsiveness to challenges, enabling the Enterprise-era behemoths to compete fast and nimble startups. However, in order to operate with maximum efficiency, continuous analysis of all aspects of operations is needed, and Big Data analytics is exactly the thing to do the job.</p>
+<h2 id="bigdata">Big Data: forget the samples, use all the data</h2>
+<p>Permanent reflection, analysis and striving for constant improvement of all the components of the workflow, customer relations and human resources is essential to the success of any business. Knowing if your marketing campaigns convey your message clearly, and if your sales pitches are hitting the sweet spot, and if your product meets and exceeds the customer’s expectations — all of this is a goldmine of business knowledge.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3278" src="https://itsvit.com/wp-content/uploads/2018/06/Pillars-of-digital-transformation-ITSvit-Big-Data.jpg" alt="3 pillars of digital transformation: Cloud, DevOps, Big Data 1" width="1200" height="628"></p>
+<p>Businesses are used to working with pilots, target groups, representative samples, various surveys and feedback forms. Sadly, this is not enough nowadays, as in order to be competitive your business should analyze all the entirety of data available to it, or you are in risk of being outperformed by more technologically savvy competition.</p>
+<blockquote style="background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px;"><p><em><b>“Big Data allows uniting all the data available to your company (differing in volume, variety, velocity, and value) and using Machine Learning algorithms to sift through it in order to unveil hidden tendencies, profit and growth avenues or potential dangers and react accordingly.”</b></em></p></blockquote>
+<p><b>See also</b>: <a href="https://itsvit.com/blog/news/use-big-data-competitors/" target="_blank" rel="nofollow noopener noreferrer">You should use Big Data before your competitors do</a></p>
+<p>However, Big Data is largely the realm feared by enterprises, as it seems to demand vast investments and lacks to deliver tangible results. We have already demystified some of the <a href="https://itsvit.com/blog/news/demystified-5-myths-big-data/" target="_blank" rel="nofollow noopener noreferrer">myths of the Big Data field</a>, as well as highlighting 8 business success stories based on Big Data (<a href="https://itsvit.com/big-data/8-real-life-business-success-stories-based-big-data-part-1/" target="_blank" rel="nofollow noopener noreferrer">part 1</a>, <a href="https://itsvit.com/blog/8-real-life-business-success-stories-based-big-data-part-2/" target="_blank" rel="nofollow noopener noreferrer">part 2</a>). Feel free to explore the ways multiple companies used Big Data analytics to secure and increase their bottom line, as well as strengthening their market positions. How to achieve this goal then? Following the paths of others might not work, as every business is unique and has particular strengths and obstacles on their ways to short-term tasks and long-term goals.</p>
+<p>Thus said, the best way to succeed using Big Data analytics would be the following:</p>
+<ol>
+<li>Make a list of market, structural or cultural challenges the business or organization is currently facing.</li>
+<li>Choose a trustworthy source of feedback reflecting your company position in appropriate areas. Sales efficiency can be monitored through your CRM system, target audience attitudes can be discovered from social media, forums or feedback forms, as well as <a href="https://itsvit.com/big-data/big-data-scraping-vs-web-data-crawling/" target="_blank" rel="nofollow noopener noreferrer">web scraping</a> for specific data like your brand or product mentions, etc.</li>
+<li>Employ a team of Big Data architects to create the data analytics system and configure it to add all of the incoming data streams into a data pool.</li>
+<li>They must then configure the Machine Learning models to sift through this data in order to find important patterns and visualize them in easy-to-read and intuitive dashboards.</li>
+<li>Once you have the analysis process polished, you will be able to receive real-time feedback and measure the impact of your decisions right away.</li>
+</ol>
+<h2 id="conclusions">Conclusions on the importance of cloud, DevOps and Big Data for successful digital transformation</h2>
+<p>Thus said, digital transformation is not about moving the servers to the cloud data centers or installing some neat DevOps tools. It is all about the integral and structured approach to all business processes, aimed at efficiency and centered around improving customer experiences. Obviously, gaining the end-user loyalty and word of mouth advocacy for the brand is one of the main goals of any business, and this is what digital transformation can deliver.</p>
+<p>Big Data systems operate using DevOps infrastructure built atop the platforms provisioned by cloud service providers. As you can see, all three components are essential, yet the strong leadership and wholehearted support of business executives are the final part of the puzzle.</p>
+<p>Only by adopting the new way of thinking, planning and achieving the business goals can a company or organization truly innovate and upgrade their operations. Do you think otherwise or have some hands-on experience with digital transformation in your company? Please share it with us!</p>The post <a href="https://itsvit.com/blog/3-pillars-digital-transformation-cloud-devops-big-data/">3 pillars of digital transformation: Cloud, DevOps, Big Data</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/3-pillars-digital-transformation-cloud-devops-big-data/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Big Data analytics in the banking sector</title>
+		<link>https://itsvit.com/blog/big-data-analytics-banking-sector/</link>
+					<comments>https://itsvit.com/blog/big-data-analytics-banking-sector/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Thu, 10 May 2018 10:42:55 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=3106</guid>
+
+					<description><![CDATA[<p>Big Data analysis can turn troves of idle data into goldmines of valuable business knowledge. As banks literally sit on a wealth of data, deploying Big Data analytics systems is a crucial part of their digital transformation. While the banks do understand the need to meet their target audience’s expectations, they surprisingly often fail to grasp the importance of using  Big Data Analytics to empower their operations. This article highlights the ways Big Data analytics can be applied in the banking sector to ensure a better, healthier bottom line.</p>
+The post <a href="https://itsvit.com/blog/big-data-analytics-banking-sector/">Big Data analytics in the banking sector</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>Big Data Analytics can become the main driver of innovation in the banking industry — and it is actually becoming one. We list several areas where Big Data can help the banks perform better.<br />
+<span id="more-3106"></span>Investments in Big Data analytics in banking sector totaled <b>$20.8 billion</b> in 2016, according to the IDC <em>Semiannual Big Data and Analytics Spending Guide of 2016</em>. This makes the domain one of the dominant consumers of <a href="https://itsvit.com/our-services/big-data-and-data-science/" target="_blank" rel="nofollow noopener noreferrer">Big Data services</a> and an ever-hungry market for Big Data architects, solutions and bespoke tools.<img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3110" src="https://itsvit.com/wp-content/uploads/2018/04/Big-Data-in-banking-spread.jpg" alt="Big Data analytics in the banking sector_1" width="1200" height="628" />Within this wealth of investments, the allocation of funds mostly targeted the customer support, risk assessment, decision-making support and researching for new profit opportunities along with investing in new markets, lowering time-to-market and funding the blockchain projects, as the PwC <em>Global FinTech Report</em>, published March 2016, shows.<img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3108" src="https://itsvit.com/wp-content/uploads/2018/04/Big-Data-in-banking-applications.jpg" alt="Big Data analytics in the banking sector_2" width="1200" height="628" />The trend is growing and in 2017 these numbers became only bigger. The amount of data generated each second <b>will grow 700% by 2020</b>, according to GDC prognosis. The financial and banking data will be one of the cornerstones of this Big Data flood, and being able to process it means being competitive among the banks and financial institutions.</p>
+<p>As we already elaborated while listing <a href="https://itsvit.com/blog/types-big-data-tools-svit-uses/" target="_blank" rel="nofollow noopener noreferrer">the types of Big Data tools IT Svit uses</a>, the really big data flows can be described with 3 v’s: variety, velocity, and volume. Here is how these relate to the banks:</p>
+<ul>
+<li style="margin-bottom: 6px;"><b>Variety</b> stands for the plenitude of data types processed, and the banks do have to deal with huge numbers of various types of data. From transaction details and history to credit scores and risk assessment reports — the banks have troves of such data.</li>
+<li style="margin-bottom: 6px;"><b>Velocity</b> means the speed at which new data is added to the database. Hitting the threshold of 100 transactions per minute is easy for a respectable bank.</li>
+<li style="margin-bottom: 6px;"><b>Volume</b> means the amount of space this data will take to store. Huge financial institutions like the New York Stock Exchange (NYSE) generate terabytes of data daily.</li>
+</ul>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3107" src="https://itsvit.com/wp-content/uploads/2018/04/Big-Data-in-banking.jpg" alt="Big Data analytics in the banking sector" width="1200" height="628" />However, as we explained in the article on the <a href="https://itsvit.com/blog/big-data-visualization-principles/" target="_blank" rel="nofollow noopener noreferrer">Big Data visualization principles</a>, the 3 v’s are useless if they do not lead to the 4’th one — <b>value</b>. For the banks, this means they can apply the results of big data analysis real time and make business decisions accordingly. This can be applied to the following activities:</p>
+<ul>
+<li style="margin-bottom: 6px;">Discovering the spending patterns of the customers</li>
+<li style="margin-bottom: 6px;">Identifying the main channels of transactions (ATM withdrawal, credit/debit card payments)</li>
+<li style="margin-bottom: 6px;">Splitting the customers into segments according to their profiles</li>
+<li style="margin-bottom: 6px;">Product cross-selling based on the customers’ segmentation</li>
+<li style="margin-bottom: 6px;">Fraud management &amp; prevention</li>
+<li style="margin-bottom: 6px;">Risk assessment, compliance &amp; reporting</li>
+<li style="margin-bottom: 6px;">Customer feedback analysis and application</li>
+</ul>
+<h2>Below we elaborate on the examples of using Big Data in these fields of the banking industry.<img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3109" src="https://itsvit.com/wp-content/uploads/2018/04/Big-Data-in-banking-bank.jpg" alt="Big Data analytics in the banking sector_3" width="1200" height="628" />Customer spending patterns</h2>
+<p>The banks have direct access to a wealth of historical data regarding the customer spending patterns. They know how much money you were paid as a salary any given month, how much went to your saving account, how much went to your utility providers, etc. This provides a reach basis for further analysis. Applying filters like festive seasons and macroeconomic conditions the banking employees can understand if the customer’s salary is growing steadily and if the spending remains adequate. This is one of the cornerstone factors for risk assessment, loan screening, mortgage evaluation and cross-selling of multiple financial products like insurance.</p>
+<h2>Transaction channel identification</h2>
+<p>The banks benefit greatly by understanding if their customers withdraw in cash all the sum available on the payday, or if they prefer to keep their money on the credit/debit card. Obviously, the latter customers can be approached with the offers to invest in short-term loans with high payout rates, etc.</p>
+<h2>Customer segmentation and profiling</h2>
+<p>Once the initial analysis of customer spending patterns and preferred transaction channels is complete, the customer base can be segmented according to several appropriate profiles. Easy spenders, cautious investors, rapid loan repayers, deadline rush returners… Knowing the financial profiles of all customers helps the bank evaluate the expected spending and income next month and make detailed plans to secure the bottom line and maximize income.</p>
+<h2>Product cross-selling</h2>
+<p>Why not offer a better return on interest to cautious investors to stimulate them to spend more actively? Is it worth providing a short-time loan to an easy spender who already struggles to repay a debt? Precise analysis of the customers’ financial backgrounds ensures the bank is able to cross-sell auxiliary products more efficiently and better engage the customers with personalized offers.</p>
+<h2>Fraud management &amp; prevention</h2>
+<p>Knowing the usual spending patterns of an individual helps raise a red flag if something outrageous happens. If a cautious investor who prefers to pay with his card attempts to withdraw all the money from his account via an ATM, this might mean the card was stolen and used by fraudsters. A call from a bank requesting a clearance for such operation helps easily understand if it is a legitimate claim or a fraudulent behavior the cardholder does not know of. Analyzing other types of transactions helps cut down the risk of fraudulent actions greatly.<img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3111" src="https://itsvit.com/wp-content/uploads/2018/04/Big-Data-in-banking-usage.jpg" alt="Big Data analytics in the banking sector_4" width="1200" height="628" /></p>
+<h2>Risk assessment, compliance &amp; reporting</h2>
+<p>A similar procedure can be used for risk assessment while trading stocks or screening a candidate for a loan. Understanding the spending patterns and previous credit history of a customer can help rapidly assess the risks of issuing a loan. Big Data algorithms can also help deal with compliance, audit and reporting issues in order to streamline the operations and remove the managerial overhead.</p>
+<h2>Customer feedback analysis and application</h2>
+<p>The customer can leave feedback after dealing with the customer support center or through the feedback form, but they are much more likely to share their opinion through the social media. Big Data tools can sift through this public data and gather all the mentions of the bank’s brand to be able to respond rapidly and adequately. When the customers see the bank hears and values their opinion and makes the improvements they demand — their loyalty and brand advocacy grows greatly.</p>
+<h2>Final thoughts on using Big Data in the banking sector</h2>
+<p>Doing the things the old way is too risky nowadays. The companies must evolve and grasp the new technologies if they want to succeed. Adopting the Big Data analytics and imbuing it into the existing banking sector workflows is one of the key elements of surviving and prevailing in the rapidly evolving business environment of the digital millennium.</p>
+<p>We are all used to perceive the banks as huge buildings with cool marble halls where the clerks work with the customers. In the last 10 years, the banks invested heavily into modernizing their offers and providing mobile access to their services. In the next 5 years, they will have to learn to empower their operations with Big Data analytics, AI/ML algorithms, and other high-tech tools.</p>The post <a href="https://itsvit.com/blog/big-data-analytics-banking-sector/">Big Data analytics in the banking sector</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/big-data-analytics-banking-sector/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Cutting-edge IT trends for 2018: Cloud, Big Data, AI, ML and IoT</title>
+		<link>https://itsvit.com/blog/cutting-edge-trends-2018-cloud-big-data-ai-ml-iot/</link>
+					<comments>https://itsvit.com/blog/cutting-edge-trends-2018-cloud-big-data-ai-ml-iot/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Thu, 03 May 2018 13:34:33 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Artificial Intelligence]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<category><![CDATA[Cloud Computing]]></category>
+		<category><![CDATA[Machine learning]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=3093</guid>
+
+					<description><![CDATA[<p>While 2018 is still young, it can be immensely beneficial to know what is trending in the top tech industry fields like the cloud solutions, Big Data, AI, ML, IoT and other… We created a (relatively) short list of the most prominent trends and projects worth following in 2018.</p>
+The post <a href="https://itsvit.com/blog/cutting-edge-trends-2018-cloud-big-data-ai-ml-iot/">Cutting-edge IT trends for 2018: Cloud, Big Data, AI, ML and IoT</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>2018 might well become the year of huge leaps in predictive analytics, AI, edge computing, data storage, hybrid cloud and much more… Learn about the hottest IT trends for 2018!<br />
+<span id="more-3093"></span>2017 was the year the IT industry matured and expanded beyond any previous limits, as the cloud service providers like <a href="https://itsvit.com/blog/new-aws-tech-introduced-aws-reinvent-2017/" target="_blank" rel="nofollow noopener noreferrer">AWS introduced the next generation of cloud instances</a>, data storage, and processing solutions, more potent and cost-efficient. While some Big Data tools and ML technologies became obsolete and had to be dropped, new, more feature-rich and productive tooling (like Spark) comes to their place.<br />
+The term Big Data itself is somewhat excessive right now, as we know the data in question is huge by default. This is why many IT experts and credible sources largely use just “data” instead. As using the data analytics efficiently is crucial for successful business decision-making, the whole pack of IT industry branches is centered around high-velocity data aggregation, inexpensive data storage, high-speed data processing and high-accuracy data analytics. Let’s take a closer look at the cutting-edge tech trends for the businesses in 2018.</p>
+<h2>IoT for high-velocity data aggregation</h2>
+<p>Data lakes used for Big Data analytics have multiple inlets, like social media, internal data flows from CRM/ERP systems, accounting platforms, etc. Nonetheless, when we add IoT sensors to the mix the complexity grows tenfold. In order to be able to extract valuable insights from this data, it must be aggregated and processed quickly and the amount of data inserted should be kept at the lowest level appropriate.</p>
+<p>For example, when collecting the Industry 4.0 data from fully-automated factories, there might be hundreds of temperature sensors scattered across the facility, which will be transmitting the same temperature data in normal mode. In this case, it is logical to cut off 99% of data and report only that the temperature was nominal. Only if (when) the temperature spike happens, should the edge-computing system react, locate the sensor that raised the alert, analyze the situation and act appropriately.</p>
+<p>As another example, let’s assume we have a wind power plant with multiple wind turbines rotating under the edge computing system control. If the wind blast brings small gravel that can damage the rotor bearings, the first turbine hit reports of the impact, the system identifies the threat and responds by ordering the rest of the turbines to rotate their fans in a direction allowing to avoid a collision.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3097" src="https://itsvit.com/wp-content/uploads/2018/04/Cutting-edge-IT-trends-for-2018-edge-computing.jpg" alt="Cutting-edge IT trends for 2018 - Cloud, Big Data, AI, ML and IoT_1" width="1200" height="628" />Such high-velocity data aggregation and analysis with edge computing systems are already available on many cloud platforms, and will further expand in 2018.</p>
+<h2>Inexpensive data storage in the cloud</h2>
+<p>Cloud storage is a must for data lakes, as only leveraging the cloud computing resources allows unleashing the full potential of business intelligence and Big Data analytics systems. However, when the data in question is huge, so will be the expenses on its storage. While many cloud service providers like <a href="https://itsvit.com/blog/news/aws-vs-gcp-cloud-service-provider-choose/" target="_blank" rel="nofollow noopener noreferrer">AWS or GCP</a> work hard on minimizing the data storage expenses, they still remain substantial. The questions of data security also raise certain concerns, as multiple departments gain access to the cloud and strict security protocols should be applied to ensure the safety of data at work.</p>
+<p><b>See also</b>: <a href="https://itsvit.com/blog/demystified-6-myths-cloud-computing/" target="_blank" rel="nofollow noopener noreferrer">Demystified: 6 Myths of Cloud Computing</a></p>
+<p>One possible solution is going for hybrid cloud strategy and combining the granular access right provided by on-prem infrastructure with immense and easily-scalable computational power of the public cloud. The other approach lies within using <a href="https://itsvit.com/blog/blockchain-big-data-match-made-heavens/" target="_blank" rel="nofollow noopener noreferrer">blockchain-powered cloud storage</a> options, as some pilots proved to provide <b>90% cost reduction as compared to AWS</b>.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3096" src="https://itsvit.com/wp-content/uploads/2018/04/Cutting-edge-IT-trends-for-2018-data-storage.jpg" alt="Cutting-edge IT trends for 2018 - Cloud, Big Data, AI, ML and IoT_3" width="1200" height="628" />In 2018 these projects will thrive and mature, readying for an industry-wide adoption.</p>
+<h2>High-speed Big Data processing</h2>
+<p>The Big Data solutions provider Syncsort has published a survey of the Big Data challenges and issues faced by the enterprise businesses. One of the key findings of that survey is the fact nearly <b>70% of respondents mentioned the implications with ETL</b>, meaning they struggle to process the incoming data fast enough to keep their data lakes fresh and relevant.</p>
+<p>Real-time and predictive analytics that are required to provide solid ground for on-point business analytics demand polished data processing workflows, while over <b>75%</b> of the Syncsort survey respondents acknowledged they <b>need to be able to process data more rapidly</b>. <a href="https://itsvit.com/blog/big-data-visualization-principles/" target="_blank" rel="nofollow noopener noreferrer">Big Data visualization models</a> allow providing the analytics results in a clearly comprehensible form.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3095" src="https://itsvit.com/wp-content/uploads/2018/04/Cutting-edge-IT-trends-for-2018-data-processing.jpg" alt="Cutting-edge IT trends for 2018 - Cloud, Big Data, AI, ML and IoT_2" width="1200" height="628" />2018 is likely to be the year various <a href="https://itsvit.com/blog/top-4-popular-big-data-visualization-tools/" target="_blank" rel="nofollow noopener noreferrer">Big Data visualization tools</a> become even more production-ready and able to cater to the needs of enterprise business.</p>
+<h2>AI and ML used for high-accuracy data analytics</h2>
+<p>The main direction AI and Machine Learning (ML) development is taking today is the improvement of the ways the humans interact with computers by writing special algorithms. These algorithms allow to automate the routine work or improve the results of the tasks where the outcomes are traditionally highly dependent on human skills. 2017 saw great accomplishments in the ML areas like <a href="https://itsvit.com/blog/deep-learning-summary-2017-text-speech-applications/" target="_blank" rel="nofollow noopener noreferrer">text translation</a>, <a href="https://itsvit.com/blog/deep-learning-summary-2017-machine-perception-developments/" target="_blank" rel="nofollow noopener noreferrer">optical image recognition</a>, and various other projects.</p>
+<p><b>See also</b>: <a href="https://itsvit.com/big-data/deep-learning-summary-2017-reinforced-learning-miscellaneous-apps/" target="_blank" rel="nofollow noopener noreferrer">Deep Learning summary for 2017: Reinforced Learning and Miscellaneous apps</a></p>
+<p>Amazon’s prediction engine is intended to provide better service to the customers, yet as of now, its accuracy is quite low, around 10% at best. In the end of 2017, AWS joined forces with Azure to develop a new-generation AI platform, <a href="https://github.com/gluon-api/gluon-api/" target="_blank" rel="nofollow noopener noreferrer">Gluon API</a>. By outsourcing the platform AWS and Azure hope to encourage AI developers of any skill level to produce more clean and efficient AI algorithms.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3098" src="https://itsvit.com/wp-content/uploads/2018/04/Cutting-edge-IT-trends-for-2018-Gluon-API.jpg" alt="Cutting-edge IT trends for 2018 - Cloud, Big Data, AI, ML and IoT_4" width="1200" height="628" />We are sure Gluon will be heartily welcomed in 2018 and will become one of the main tools in any AI developer’s toolkit.</p>
+<h2>Final thoughts on the cutting-edge IT trends for 2018</h2>
+<p>2018 will definitely be the year multiple cloud, Big Data, IoT and AI/ML projects enter the production-grade phase. Tools like Spark, JupyteR, Gluon and others will find their way to the hearts and toolkits of the enterprise specialists. People responsible for the digital transformation and increased efficiency of Business Intelligence &amp; Big Data analytics in their companies must keep a close eye on these trends and adopt the solutions once they are ready.</p>
+<p>What’s your opinion? Did we miss any astonishing project in these areas? What is your first-hand experience with data lakes management and data analytics? Please share your thoughts and opinions in the comments below!</p>The post <a href="https://itsvit.com/blog/cutting-edge-trends-2018-cloud-big-data-ai-ml-iot/">Cutting-edge IT trends for 2018: Cloud, Big Data, AI, ML and IoT</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/cutting-edge-trends-2018-cloud-big-data-ai-ml-iot/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Big Data misuse can break your business</title>
+		<link>https://itsvit.com/blog/big-data-misuse-can-break-your-business/</link>
+					<comments>https://itsvit.com/blog/big-data-misuse-can-break-your-business/#comments</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Fri, 23 Feb 2018 17:14:32 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=2679</guid>
+
+					<description><![CDATA[<p>Correct use of the Big Data analytics and ML algorithms helps boost the customer satisfaction, secure the bottom line and increase the ROI. Quite opposite, the Big Data misuse results will be awful. Blazent, an IT data intelligence company, has published a research on the state of Big Data quality back in 2016, which yielded [&#8230;]</p>
+The post <a href="https://itsvit.com/blog/big-data-misuse-can-break-your-business/">Big Data misuse can break your business</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>Correct use of the Big Data analytics and ML algorithms helps boost the customer satisfaction, secure the bottom line and increase the ROI. Quite opposite, the Big Data misuse results will be awful.</p>
+<p><span id="more-2679"></span>Blazent, an IT data intelligence company, has published a <a href="http://pages.blazent.com/rs/184-CZE-628/images/Blazent_State_of_DataQuality_2016.pdf" target="_blank" rel="nofollow noopener noreferrer">research on the state of Big Data quality</a> back in 2016, which yielded some interesting insights on the perceived outcomes on the misuse of Big Data by enterprise business, conducted amongst top-level business executives.</p>
+<p>For example, while <b>80%</b> of enterprise C-suite managers acknowledge using Big Data analytics helps them find new profit opportunities. In addition, <b>50%</b> of respondents said such approach helps increase the revenues and <b>50%</b> of the executives assure this lowers the costs. We have already told about <a href="https://itsvit.com/big-data/8-real-life-business-success-stories-based-big-data-part-1/" target="_blank" rel="nofollow noopener noreferrer">8 real-life business success stories based on Big Data</a>, highlighting the incredible results that emerge when the Big Data analysis is used correctly.</p>
+<p><b>See also</b>: <a href="https://itsvit.com/blog/8-real-life-business-success-stories-based-big-data-part-2/" target="_blank" rel="nofollow noopener noreferrer">8 Real-Life Business Success Stories Based on Big Data – Part 2</a></p>
+<p>On the other hand, <b>42%</b> of executives state that misuse of Big Data can impair revenues and <b>39%</b> said this can be deteriorating for correct decision-making. To say even more, while <b>40%</b> of business executives are sure their <a href="https://itsvit.com/blog/5-critical-success-factors-big-data-mining/" target="_blank" rel="nofollow noopener noreferrer">Big Data mining</a> projects are successful, nearly <b>95%</b> are aware that incorrect results of such endeavors can be devastating for the business.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-2684" src="https://itsvit.com/wp-content/uploads/2018/02/Big_Data_Misuse_Break_Business_ITSvit_2.jpg.jpg" alt="Big_Data_Misuse_Break_Business_ITSvit_2.jpg" width="1200" height="1256" /></p>
+<p>Thus said, there indeed were the cases when misusing Big Data analytics in some way has brought some negative consequences for the businesses. We list them below.</p>
+<h2>Irrelevant Big Data floods you with unnecessary details</h2>
+<p>One huge medical company was determined to adopt Big Data as quickly as possible. This has led to the insufficient planning of the Big Data relevancy checks and curation procedures, largely leading to “collect everything, analyze later” approach. As a result, their Big Data analysis reports were mostly more than <b>200 pages</b> long, which flooded the readers with textual details and efficiently lead to the reports being absolutely useless.</p>
+<p>However, after reshaping their data stream curation strategies to track only the influential data and opting for correct <a href="https://itsvit.com/blog/top-4-popular-big-data-visualization-tools/" target="_blank" rel="nofollow noopener noreferrer">Big Data visualization tools</a>, the company ended up with <b>20 pages</b> of infographics that were easy to comprehend and draw decisions upon.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-2681" src="https://itsvit.com/wp-content/uploads/2018/02/Big_Data_Misuse_Break_Business_ITSvit_1.jpg" alt="Big_Data_Misuse_Can_Break_Your_Business_1" width="1200" height="628" /></p>
+<h2>Hasty Big Data migration can lead to long and costly repairs</h2>
+<p>Many businesses are using on-prem Business Intelligence systems for quite a while already. However, as opting for <a href="https://itsvit.com/blog/10-hot-trends-big-data-analytics-2017/" target="_blank" rel="nofollow noopener noreferrer">Big Data analytics becomes mainstream</a>, multiple companies endeavor to adopt the top-of-the-line tech and practices ASAP. Unfortunately, this can lead to certain damage, as more than <b>50%</b> of underplanned data migration projects result in certain disarray and require much more time and effort to be put into order. Thus said, careful planning and taking a slow approach to Big Data migration allows saving much money and effort in the end.</p>
+<p>A large online retailer decided to move to leveraging Big Data analysis without a help of experienced contractors. They ended up in horrible disarray and had to pause their customer-facing systems and processes in order to fix the errors. No need to say that prolonged website maintenance has led to significant customer frustration, not to mention reputational losses and missed revenues.</p>
+<h2>Internal miscommunication issues</h2>
+<p>Big Data analytics is a complex business process that should have many input and output points. When some company departments consider it to be their internal business that should not bother anyone else, including their colleagues from other departments — the business as a whole might suffer dire consequences.</p>
+<p>One online electronics vendor met a situation when their Marketing department representatives thought of themselves as “major money bringers” and the rest of the departments somewhat inferior to them. There was nothing a good team building event and several months of collaboration couldn’t put straight, yet as it came out they did not have such a luxury. A customer complaint on Facebook regarding a shopping cart glitch was forwarded to the development team, while a general and somewhat snide reply was given to the Facebook post.</p>
+<p>The customer, a 16-years-old wannabe-developer, posted a detailed reply, highlighting all the technical issues with the company systems, and making it clear that the company representatives were both ignorant and not tech-savvy. The comment storm struck hard, and though the fix for the initial comment was developed quite soon, the company reputation was quite marred after such a rant. The management had to roll some heads in the Marketing and make it sure the team shares all the data and respects each other’s duties in the future.</p>
+<h2>Incorrect promotion based on Big Data analysis outcomes</h2>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-2685" src="https://itsvit.com/wp-content/uploads/2018/02/Big_Data_Misuse_Break_Business_ITSvit_3.jpg" alt="Big_Data_Misuse_Can_Break_Your_Business_3" width="1200" height="628" /></p>
+<p>When a plethora of Big Data items are analyzed, some minor detail might spoil the whole picture. We all remember the notorious case of a New York Times reporter Charles Duhigg telling of <a href="http://www.nytimes.com/2012/02/19/magazine/shopping-habits.html" target="_blank" rel="nofollow noopener noreferrer">Target sending a teen girl’s father in Minneapolis some coupons for pregnancy-related goods</a>. When the outraged customer came to the shop and demanded explanations, it came out his daughter made certain purchases that triggered the Target’s pregnancy-prediction Big Data analytical system to conclude she is pregnant and issue some coupons for her to endorse more purchases. As it soon became known, the teenager was indeed expecting a baby, she just did not tell her father yet.</p>
+<p>Many people became offended with the retail giant intruding such sensitive areas of their life as pregnancy and a media/PR storm followed, with Target banning the Duhigg reporter from interviewing the company employees with a ruling from a court of law. Not a pretty course of actions, yeah? Such a spot on the brand’s image is not easy to overcome, and no court orders can do that.</p>
+<p>The same article contains explanations on how Target actually used their Big Data analytics system for good measures and succeeded in promoting their products correctly.</p>
+<h2>Wrong personalization of the analytics outcomes</h2>
+<p>There are quite a few examples of incorrect usage of the analytics results, For instance, an infamous case of Golden Key International sending a letter addressed to “LisaIsASlut McIntire” to their customer in 2014 should be also fresh in your memories. It was impossible to determine who entered such an email address into the system, and the tool itself could not screen the database or rectify the address, so the public image of the company was damaged greatly.</p>
+<p>Another case would be the OfficeMax PR failure. The company addressed an email to one of their customers, a grieving father, with “Mike Seay/Daughter Killed in Car Crash/Or Current Business”. Needless to say no official apologies could help sooth the pain and frustration of the man. The company has proclaimed that significant (and, obviously, costly) upgrades were made to their data systems to prevent such cases in the future, yet this could help little to clear their reputation.</p>
+<p>An example of treating Big Data failures correctly lies within the case of AppFirst crisis management after an accidental customer database wipe. The company CEO and co-founder David Roth did not stop at posting and explanation. He sent emails to all the customers affected by the disaster and spent 4 days calling them to explain the situation and apologize. Due to such personal approach, the customers were quick to forgive and the sales actually rose instead of plummeting after such a failure.</p>
+<h2>Final thoughts on Big Data misuse results</h2>
+<p>Big Data analytics is a double-edged sword. It can be a formidable weapon to overpower your competition, yet it can backfire at the business that does not tread carefully. Perhaps these examples will help you avoid such infamous mistakes when dealing with your Big Data analytics systems. Did you ever face any misuse of the sort? How did you deal with the consequences? Please share your experiences in the comments below!</p>The post <a href="https://itsvit.com/blog/big-data-misuse-can-break-your-business/">Big Data misuse can break your business</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/big-data-misuse-can-break-your-business/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Big Data: What is Web Scraping and how to use it</title>
+		<link>https://itsvit.com/blog/big-data-what-is-web-scraping-and-how-to-use-it/</link>
+					<comments>https://itsvit.com/blog/big-data-what-is-web-scraping-and-how-to-use-it/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Tue, 30 Jan 2018 18:23:40 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=2536</guid>
+
+					<description><![CDATA[<p>Building efficient Big Data analytics system requires training a relevant machine learning model. This, in turn, demands having huge data lakes, and these lakes are usually much larger than any company can generate on its own. What to do then? Use web scraping to harness the goldmine of data from the Internet! Here is how this can be done.</p>
+The post <a href="https://itsvit.com/blog/big-data-what-is-web-scraping-and-how-to-use-it/">Big Data: What is Web Scraping and how to use it</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>What is web scraping? It is essential for gathering Big Data sets, which are the cornerstone of Big Data analytics, Machine Learning (ML) and tutoring the Artificial Intelligence (AI) algorithms.<br />
+<span id="more-2536"></span><br />
+The hard point is that information is the most valuable commodity in the world (after time, as you cannot buy the time back), as Michael Douglas has said in the famous “Wall Street” movie long before the Internet era.</p>
+<p>This means that the ones who possess the information make all possible precaution to protect it from copying. In the pre-Internet times it was easy, as copyright legislation is pretty solid in the developed countries. The World Wide Web changed everything, as anybody can copy the text on the page and paste it into another page, and web scrapers are simply the algorithms that can do it much quicker than humans.</p>
+<blockquote style="background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px;"><p><em><b>DISCLAIMER: The following is intended for the Big Data researchers who comply with the permissions from <a href="https://en.wikipedia.org/wiki/Robots_exclusion_standard" target="_blank" rel="nofollow noopener noreferrer">robots.txt</a>, set the correct <a href="https://en.wikipedia.org/wiki/User_agent" target="_blank" rel="nofollow noopener noreferrer">User Agent</a> and do not violate the Terms of Service of the sites they scrape.</b></em></p></blockquote>
+<p>IT Svit has ample experience with scraping the websites for our Big Data projects. We believe there are three levels of web scraping complexity, depending on the amount of JavaScript (JS) you have to tackle:</p>
+<ol>
+<li><b>A lucky loiterer</b><br />
+a) <em>The web pages you need to scrape have simple and clean markup without any JS</em>. In this case, one needs to simply create the “locators” for the data in question. XPath statements are great examples of such locators.<br />
+b) <em>All the URLs to other websites and pages are direct</em>. Finding only the relevant URLs is the main difficulty here. For example, you can look for the `<b>class</b>` attribute. In such a case the XPath will look like this: `<b>//a[@class=&#8217;Your_target_class&#8217;]</b>`</li>
+<li><b>A skilled professional</b><br />
+a) <em>Partial JS rendering</em>. For example, the search results page has all the information, but it is generated by JS. Typically, if you open a specific result, the full data without JS is there.<br />
+b) <em>Simple pagination</em>. Instead of constantly clicking the &#8220;next page&#8221; button you can receive pages simply by creating the necessary URL like this: <a href="http://somesite.com/data?page=1&amp;limit10" target="_blank" rel="nofollow noopener noreferrer">http://somesite.com/data?page=2&amp;limit10</a>. In the same way, you can, for example, increase the number of results in a single query.<br />
+c) <em>Simple URL creation rules</em>. The links can be formed by JS, but you can unravel the rule and create them yourself.</li>
+<li><b>A Jedi Knight, may the Force be with you</b><br />
+a) <em>The page is fully built with JS</em>. There is no way to get the data without running JS. In this case, you should use more sophisticated tools. <a href="https://en.wikipedia.org/wiki/Selenium_(software)" target="_blank" rel="nofollow noopener noreferrer">Selenium</a> or some other <a href="https://en.wikipedia.org/wiki/WebKit" target="_blank" rel="nofollow noopener noreferrer">WebKit</a>-based tools will get the job done.<br />
+b) <em>The URLs are formed using JS</em>. The tools from the previous paragraph should solve this problem also, yet there may be a slowdown in processing due to the fact that JS rendering takes additional time. Perhaps you should consider splitting the scrapper and spider and performing such slow operations on a separate handler.<br />
+c) <em><a href="https://en.wikipedia.org/wiki/CAPTCHA" target="_blank" rel="nofollow noopener noreferrer">CAPTCHA</a> is present</em>. Usually, CAPTCHA does not appear immediately and takes several requests. In this case, you can use various proxy services and simply switch IP when the scraper is stopped by CAPTCHA. By the way, these services can be also useful for emulating access from different locations.<br />
+d) <em>The website has an underlying API with complex rules of data transfer</em>. JS scripts render the pages after referring to the back-end. It is possible that it will be easier to receive data when making queries directly to the back-end. To analyze the operation of scripts, use the Developer Console in your browser. Press F12 and go to the Network tab.</li>
+</ol>
+<p>It is also important to understand <a href="https://itsvit.com/big-data/big-data-scraping-vs-web-data-crawling/" target="_blank" rel="nofollow noopener noreferrer">the difference between web scraping and data mining</a>. In short, while data scraping can happen in any data array and can be done manually, web scraping or crawling takes place only on the web pages and is performed by special robots — crawlers/scrapers. We have also listed <a href="https://itsvit.com/blog/5-critical-success-factors-big-data-mining/" target="_blank" rel="nofollow noopener noreferrer">5 success factors for Big Data mining</a>, where finding the correct and relevant data sources is the most important basis for a successful analytics.</p>
+<p>For example, the manufacturer might want to monitor the market tendencies and uncover the actual customer attitudes, without relying on the retailer’s monthly reports. By using web scraping the company can collect a huge data set of the product descriptions on the retailer sites, customer reviews and feedback on the websites of the retailers. Analyzing this data can help the manufacturer provide the retailers with better descriptions for their product, as well as list the problems the end users face with their product and apply their feedback to further improving their product and securing their bottom line through bigger sales.</p>
+<h2>Web scraping tools and methods</h2>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-2547" src="https://itsvit.com/wp-content/uploads/2018/01/Big_Data_Web_Scraping_ITSvit_2.jpg" alt="How_To_Use_Web_Scraping_2" width="1200" height="628" /></p>
+<p>Most of the scrapers are written in Python to ease the process of further processing of the collected data. We write our scrapers using frameworks and libraries for web crawling, like <a href="https://scrapy.org/" target="_blank" rel="nofollow noopener noreferrer">Scrapy</a>, <a href="https://github.com/jeanphix/Ghost.py" target="_blank" rel="nofollow noopener noreferrer">Ghost</a>, <a href="https://pypi.python.org/pypi/lxml/4.1.1" target="_blank" rel="nofollow noopener noreferrer">lxml</a>, <a href="https://aiohttp.readthedocs.io/en/stable/" target="_blank" rel="nofollow noopener noreferrer">aiohttp</a> or <a href="http://www.seleniumhq.org/" target="_blank" rel="nofollow noopener noreferrer">Selenium</a>.</p>
+<p>When building the scrapers we must be prepared for dealing with any level of complexity — from a loiterer to a powerful Jedi Knight. This is why we have to validate the data sets prior to building the scrapers for them in order to allocate sufficient resources. In addition, the conditions might change (and often do) during the scraper development, so a skilled data scientist must be prepared to deal with the third level and use their lightsabers at any given moment.</p>
+<p>In the next article of this series, we will tell what measures can be taken in order to protect your website content from unwanted web data crawling. Stay tuned for updates and the best of luck with web scraping to you!</p>The post <a href="https://itsvit.com/blog/big-data-what-is-web-scraping-and-how-to-use-it/">Big Data: What is Web Scraping and how to use it</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/big-data-what-is-web-scraping-and-how-to-use-it/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

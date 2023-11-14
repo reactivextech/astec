@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Continuous Delivery | IT Svit</title>
+	<atom:link href="https://itsvit.com/tag/continuous-delivery/feed/" rel="self" type="application/rss+xml" />
+	<link>https://itsvit.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 11 Jul 2019 15:01:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.10</generator>
+
+<image>
+	<url>https://itsvit.com/wp-content/uploads/2019/07/Logo_2-150x150.png</url>
+	<title>Continuous Delivery | IT Svit</title>
+	<link>https://itsvit.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Shortening the feedback loop with Continuous Integration and Continuous Delivery</title>
+		<link>https://itsvit.com/blog/shortening-feedback-loop-continuous-integration-continuous-delivery-pipelines/</link>
+					<comments>https://itsvit.com/blog/shortening-feedback-loop-continuous-integration-continuous-delivery-pipelines/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Sat, 02 Feb 2019 17:08:23 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[CI/CD]]></category>
+		<category><![CDATA[Continuous Delivery]]></category>
+		<category><![CDATA[Continuous Integration]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=5116</guid>
+
+					<description><![CDATA[<p>Every business that has a product or service in continuous development wants to deliver new features as quickly as possible. This is how CI/CD pipelines help shorten the feedback loop. The process of software delivery can be quite easily obstructed or even halted by release downtimes, testing loops, faulty implementations and so on. In order [&#8230;]</p>
+The post <a href="https://itsvit.com/blog/shortening-feedback-loop-continuous-integration-continuous-delivery-pipelines/">Shortening the feedback loop with Continuous Integration and Continuous Delivery</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>Every business that has a product or service in continuous development wants to deliver new features as quickly as possible. This is how CI/CD pipelines help shorten the feedback loop.</p>
+<p><span id="more-5116"></span></p>
+<p>The process of software delivery can be quite easily obstructed or even halted by release downtimes, testing loops, faulty implementations and so on. In order to minimize the risks and secure a healthy bottom line, the business must make sure their product or service runs well, performs good at scale, is updated frequently and does not crash while</p>
+<p>deployed to production. Continuous Delivery and Continuous Integration pipelines are essential for ensuring this.</p>
+<h2>What is Continuous Integration (CI) and Continuous Delivery (CD)</h2>
+<p>Before proceeding, we have to define the <a href="https://itsvit.com/blog/devops-glossary-78-basic-devops-terms-in-simple-words/" target="_blank" rel="nofollow noopener noreferrer">DevOps terms</a> of <b>Continuous Integration</b> and <b>Continuous Delivery</b> as we use them, to remove any possible misunderstanding.</p>
+<p>Continuous Integration — the software delivery practice, when each team member contributes their code to the master branch on a regular basis, to keep the codebase updated at all times.</p>
+<p>Due to this approach, the risk of source code inconsistency is minimal, and every developer can synchronize their daily code commits with the team easily. <a href="https://en.wikipedia.org/wiki/Continuous_integration" target="_blank" rel="nofollow noopener noreferrer">Continuous Integration</a> should be coupled with automated unit testing so that as soon as the code is committed to the mainline, it is tested, pushed to the build server and prepared to be deployed to production immediately.</p>
+<p>Continuous Delivery — the software delivery practice, where each update can be shipped to the end users automatically, as soon as the code is built and tested to avoid downtime on release.</p>
+<p>What is <a href="https://en.wikipedia.org/wiki/Continuous_delivery" target="_blank" rel="nofollow noopener noreferrer">Continuous Delivery</a> in real life? It is the process of configuring the Terraform and Kubernetes manifests, Ansible playbooks, Jenkins jobs and other kinds of DevOps tooling to:</p>
+<ul>
+<li>Perform automatic virtual infrastructure provisioning,</li>
+<li>Provide a testing server configuration,</li>
+<li>Ensure unit tests execution,</li>
+<li>Send notifications of successful testing completion (or failures),</li>
+<li>Enable packaging of ready source code to push it into production</li>
+<li>Removing downtime due to in-app updates or rolling updates</li>
+</ul>
+<p>Thus said, while CI/CD is quite a worthy approach, it becomes hard to implement at scale. For example, in an enterprise environment, there can be dozens of product development teams with hundreds of code commits daily. All this source code must be built and tested on testing and staging servers, before being pushed to production. The developers should be informed if the tests failed or succeeded and should be given the context of the failure to minimize the bug-fixing time.</p>
+<p>This all assumes the software development process is straightforward and plain. In reality, things usually differ. A lot. The&nbsp;case of a&nbsp;<a href="https://news.ycombinator.com/item?id=18442941" target="_blank" rel="nofollow noopener noreferrer">former Oracle Database developer described on Ycombinator</a> illustrates this well. He had to work on a product well over a decade in development, containing 25 million (!!!) lines of code. Every change, in this case, becomes a step over the bog of interlocking tests, dependencies, and requirements. A minor bug fix can take up to 2 months, with a single new feature implementation taking up to a year. He quit the job with Oracle due to that.</p>
+<h2>The grim reality of outdated software delivery processes</h2>
+<p>The common choice for building software delivery pipelines is with the help of a myriad of scripts. Unfortunately, the outcomes of such scripts are usually not too informative. If the automated unit tests fail, it is impossible to understand if the failure happened due to an error in the test or due to the incorrect script execution. The incident reports are usually fragmentary and do not provide an exhaustive picture of the issue root causes. There is usually no possibility to know if the series of tests are completed successfully, or if the 3rd out of 20 failed.</p>
+<p>The email or messenger notifications on test success or failure (if any exist) cannot be easily configured to involve only the developers responsible for the new code changes. As the product grows in size and complexity, this turns into an incessant stream of notifications that can flood the recipients completely. In addition, keeping a huge base of scripts up-to-date is a tedious and tiresome task, which draws the resources away from the main effort of delivering more value to the users.</p>
+<p>Thus said, many businesses and organizations of all sizes worldwide begin to implement the CI/CD principles, practices, and tools to be able to ship code to end users several times a day, not once half a year.</p>
+<h2>Main principles of Continuous Integration and Continuous Delivery</h2>
+<p>Out of pure logic and common sense, we can outline several main principles of continuous deployment:</p>
+<ul>
+<li><b>Standardized testing pipelines</b> — there is only one way to test and deploy the code</li>
+<li><b>Instant code testing</b> — the new code batches should be tested at once after they are committed</li>
+<li><b>Instant artifacts building</b> — new product versions should be built as soon as the new code is successfully tested to be ready for being deployed to the production environment</li>
+<li><b>Environment-agnostic delivery</b> — the code should be packaged in a way to ensure maximum portability</li>
+<li><b>Feedback consistency</b> — the outcomes of the CI process should be consistent and uniform across any language runtime</li>
+<li><b>Short feedback loops</b> — the developers should be able to draw actionable insights from the feedback to apply the fixes as soon as possible</li>
+</ul>
+<p>Please note, that there is not yet any question of tooling or level of expertise — these are the plainly visible and straightforward requirements that can benefit any team and any project. The benefits of this approach to CI/CD are quite tangible:</p>
+<ul>
+<li><b>Rapid delivery of new products and features</b></li>
+<li><b>Ease of customer and team onboarding</b></li>
+<li><b>Ease of recovery in case of force-majeure</b></li>
+</ul>
+<p>In short, the main goal of CI/CD approach is to remove any friction and unnecessary waste between the commit and deploy of new code. The main issue here is that the developers are often unaware of where their code currently is in the pipeline, as described above.</p>
+<p><img loading="Lazy" loading="lazy" class="alignleft size-full wp-image-5120" src="https://itsvit.com/wp-content/uploads/2019/02/Shortening-the-feedback-loop-with-CI-CD_feedback.jpg" alt="Main principles of Continuous Integration and Continuous Delivery" width="1338" height="700"></p>
+<h2>Transparency: the main benefit of CI/CD</h2>
+<p>To rectify this situation and implement the CI/CD pipelines the team must answer several important questions:</p>
+<ul>
+<li>When should the feedback be provided?</li>
+<li>How much context does it have to include?</li>
+<li>How often should the feedback be given?</li>
+</ul>
+<p>We have mentioned the flaws of incorrect implementation of these processes already:</p>
+<ul>
+<li><em>Too many notifications</em> might flood your team with irrelevant messages</li>
+<li><em>Simple constatations of errors are useless</em> if they do not hold any explanatory context</li>
+<li>The messages that are<em> sent after the series</em> of automated tests is completed are<em> useless, if the very first test fails</em></li>
+<li>The message <em>sent to the wrong contributor</em> is equally useless as the one not sent at all (or even more damaging, as it wastes the time of a professional)</li>
+</ul>
+<p>Thus said, the CI/CD pipelines should be implemented using the version control system (VCS) like GitHub and open source <a href="https://itsvit.com/blog/must-have-devops-tools-make-things-right-get-go/" target="_blank" rel="nofollow noopener noreferrer">DevOps tools</a> like Jenkins, CircleCI or GitlabCI, which allow solving the aforementioned issues. These platforms can be configured to provide exempts of error logs on failure or confirm success on passing the tests. They can get the code contributor tags for each batch separately and inform only the relevant developers. They can be configured to issue warnings as soon as the test fails, not after the whole series is completed to avoid fruitless waiting.</p>
+<p>Thus said, the feedback on the code delivery is transparent due to simple, yet effective rules:</p>
+<ul>
+<li><b>Send only one notification on the failure</b> of a series of tests. The developer that investigates it will discover the rest of the failures in the log and will not be frustrated with spam of multiple identical messages</li>
+<li>Likewise, <b>inform on successful testing merely once</b></li>
+<li>In the case of test failure, <b>provide enough context to clarify the issue</b>, but not too much to overwhelm the developer with unneeded details</li>
+</ul>
+<p>Therefore, if the developer receives a Slack notification that his/her code did not pass the test, we expect the message to include the link to the code Github branch in question, the name of the repository, the number of the pull request and the identifier of the unit test that failed. Such an approach to composing the error reports speeds up the code delivery many times over, as the developers do not have to guess and locate the issue roots.</p>
+<p style="text-align: center;"><img loading="Lazy" loading="lazy" class="size-full wp-image-5121 aligncenter" src="https://itsvit.com/wp-content/uploads/2019/02/Shortening-the-feedback-loop-with-CI-CD_report.jpg" alt="Transparency: the main benefit of CI/CD" width="427" height="154"></p>
+<p>The same principles can be applied to system monitoring, logging and data analysis, operating the <a href="https://itsvit.com/blog/create-self-healing-infrastructure/" target="_blank" rel="nofollow noopener noreferrer">self-healing IT infrastructure</a> and other ChatOps use cases. Wherever the software engineers are informed of an issue or task through a messenger notification, the message should be concise and to the point, while containing all the links to the essentials. This approach helps to make sure the true CI/CD is in place — transparency of workflows along with short feedback loops.</p>
+<h2>Conclusions on shortening the feedback loop with CI/CD tools</h2>
+<p>IT Svit team uses various <a href="https://itsvit.com/blog/30-open-source-devops-tools-svit-uses/" target="_blank" rel="nofollow noopener noreferrer">open-source DevOps tools</a> in our workflows. Utilizing the capabilities of Jenkins, CircleCI, GitlabCI and other tools, modern DevOps engineers can ensure the fluidity of software delivery, as well as cost-efficiency and lowering the risks of running the infrastructure in production. The essential task here is configuring the given tools to interoperate seamlessly and provide the required feedback data.</p>
+<p><img loading="Lazy" loading="lazy" class="alignleft size-full wp-image-5122" src="https://itsvit.com/wp-content/uploads/2019/02/Shortening-the-feedback-loop-with-CI-CD_tools.jpg" alt="Shortening the feedback loop with CI/CD tools" width="1338" height="700"></p>
+<p>This is not a task easily performed, so <a href="https://itsvit.com/our-services/quality-assurance-and-automation/" target="_blank" rel="nofollow noopener noreferrer">quality assurance and automation</a> are actually one of IT Svit areas of expertise as one of the <a href="https://clutch.co/it-services/msp" target="_blank" rel="nofollow noopener noreferrer">top 10 Managed Services Providers worldwide</a>. We can build error-proof, nimble and responsive CI/CD pipelines to empower your value delivery stream. Do you need it? <a href="https://itsvit.com/contacts/" target="_blank" rel="nofollow noopener noreferrer">Let us know</a>, we are always ready to help!</p>The post <a href="https://itsvit.com/blog/shortening-feedback-loop-continuous-integration-continuous-delivery-pipelines/">Shortening the feedback loop with Continuous Integration and Continuous Delivery</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/shortening-feedback-loop-continuous-integration-continuous-delivery-pipelines/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Monorepo — the Google way to do CI/CD</title>
+		<link>https://itsvit.com/blog/monorepo-google-way-ci-cd/</link>
+					<comments>https://itsvit.com/blog/monorepo-google-way-ci-cd/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Tue, 24 Jul 2018 11:34:24 +0000</pubDate>
+				<category><![CDATA[Articles]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[CI/CD]]></category>
+		<category><![CDATA[Continuous Delivery]]></category>
+		<category><![CDATA[Continuous Integration]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=3533</guid>
+
+					<description><![CDATA[<p>Every developer knows how troublesome and laborious updating a huge project is. Adding new features requires intense testing, updating multiple dependencies and managing numerous variables in multiple GitHub repos. One might assume this is the daily nightmare of the giant projects like Angular or Google. Quite the contrary, these teams have found a solution that greatly streamlines and simplifies the code delivery. This solution is monorepo and here is why it’s cool.</p>
+The post <a href="https://itsvit.com/blog/monorepo-google-way-ci-cd/">Monorepo — the Google way to do CI/CD</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>Managing a huge codebase can be a daunting task, due to the need to keep in mind and constantly update multiple variables. Monorepo enables the true CI/CD, and here is how.</p>
+<p><span id="more-3533"></span></p>
+<p><a href="https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext" target="_blank" rel="nofollow noopener noreferrer">Source control done the Google way is simple</a>. Instead of creating separate repositories for new projects, they create new top-level folders in their monorepo. This way they keep all the dependencies, variables and code components in one place. This is the reason behind their multiple daily product updates — every code commit essentially becomes a release once it passes the tests!</p>
+<p>Let’s repeat this once more:</p>
+<blockquote><p><b>Every code commit essentially becomes a release with monorepo!</b></p></blockquote>
+<p>The implications are HUGE. Instead of pushing the code to Canary builds for user acceptance and letting it work for some time to fix the bugs, Google performs automated testing on the stage of committing new code batch to the repository. This allows saving an enormous amount of time and computing resources on testing. The best part — all the dependencies are updated automatically. This is… incredible.</p>
+<p>Thus said, why not follow the lead and adopt the monorepo? If you implement this right, you are actually doing the truly Continuous Integration of new code (which leads to Continuous Delivery of new product features). Otherwise, you are doing frequent integration at best… The benefits for end users are also tremendous — they always use the latest stable build of your product and don’t have to rebuild or redeploy their environments. Everything just… works.</p>
+<p><img loading="Lazy" loading="lazy" class="alignnone size-full wp-image-3537" src="https://itsvit.com/wp-content/uploads/2018/07/monorepo-downsides.jpg" alt="Monorepo downsides" width="1200" height="628" /><br />
+But there should be downsides, surely? Yes, there are a couple, and Google has kindly provided workarounds for these:</p>
+<ul>
+<li>First of all, many <a href="https://itsvit.com/blog/must-have-devops-tools-make-things-right-get-go/" target="_blank" rel="nofollow noopener noreferrer">popular DevOps tools</a> make <b>unneeded assumptions that the repo is owned by the whole team</b>. This results in a mess of the needed code reviews, bugs reporting, bug fixes and actions to be made after every change. The workaround is <em>providing more granular code control</em>, not only to show who owns the whole repo but to highlight which team member owns which code. The corresponding <a href="https://github.com/blog/2392-introducing-code-owners" target="_blank" rel="nofollow noopener noreferrer">GitHub feature is called &#8220;code owners&#8221;</a> and this helps define the workflow precisely, exactly the way Pull requests should work — collaborators ask the code owner for permission to update the code and check the change in the most convenient way.</li>
+<li>Secondly, <b>issue trackers assume the repo equals the project</b>. There is no simple solution, but the <em>Angular team leverages</em> <em>user tags</em> to organize the repo parts corresponding the various project parts. This helps ease and streamline the source control of the monorepo to make it a manageable and filterable codebase.</li>
+<li>Lastly, the <b>numbers of notifications are overwhelming</b>. When a team collaborates on a project, each team member gets lots and lots of GitHub notifications, which he should sift through to find the important stuff. When a huge organization works on a monorepo, the stream of notification turns into a flood. By now, the only solution is <em>manually pinging the person responsible</em> for the needed action, and this issue still needs solving.</li>
+</ul>
+<p>As you can see, the downsides of using a monorepo are few and can be relatively easily overcome. They are surpassed by far by the savings in the resource expenses, product testing efficiency and software delivery pipeline simplification.</p>
+<h2>Final thoughts on using the monorepo to do the real CI/CD</h2>
+<p>We hope you will also appreciate the monorepo as much as we do. Of course, Jenkins and other CI/CD tools can work with multiple repos just as well as with a monorepo. However, the difference between frequent deployments and truly continuous integration is huge. When each new code commit seamlessly becomes the new product release, the testing is automated and done prior to building the code, you can totally omit the QA/Canary process and save a ton of resources, time and overhead.</p>
+<p>The beginning of 2019 saw an interesting discussion on the <a href="https://medium.com/@mattklein123/monorepos-please-dont-e9a279be011b" target="_blank" rel="nofollow noopener noreferrer">benefits and shortcomings of monorepos and polyrepos</a> between <a href="https://twitter.com/mattklein123" target="_blank" rel="nofollow noopener noreferrer">Matt Klein</a>, the head engineer of Lyft and <a href="https://medium.com/@adamhjk" target="_blank" rel="nofollow noopener noreferrer">Adam Jacob</a>, the CTO @ Chef. While Matt made his point that <b>monorepos make code deployment at scale quite troublesome</b> and demand dealing with multiple limitations, Adam replied in the sense that <a href="https://medium.com/@adamhjk/monorepo-please-do-3657e08a4b70" target="_blank" rel="nofollow noopener noreferrer">the main benefit of monorepos is increased visibility and responsibility across multiple teams in enterprize-scale environments</a>. Multiple repositories make teams working at little code branches feel isolated and not responsible for the issues of other teams. Monorepo destroys such a situation from the get-go, as everybody is on the spotlight all the time, and the teams are forced to communicate and collaborate BEFORE major backward compatibility issues arise, not AFTER.</p>
+<p>The benefits of using the monorepo for any business involved in software delivery are essential. IT Svit makes the most of this approach to code delivery pipeline management to power our projects, which results in multiple <a href="https://clutch.co/profile/it-svit#reviews" target="_blank" rel="nofollow noopener noreferrer">5-star reviews</a> of our satisfied customers on Clutch.co. Should you like to experience the same benefits — <a href="https://itsvit.com/contacts/" target="_blank" rel="nofollow noopener noreferrer">contact us</a> and we will help your business succeed!</p>The post <a href="https://itsvit.com/blog/monorepo-google-way-ci-cd/">Monorepo — the Google way to do CI/CD</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/monorepo-google-way-ci-cd/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AWS infrastructure deployment and CI/CD for a UK Event Service company</title>
+		<link>https://itsvit.com/blog/aws-infrastructure-deployment-ci-cd-event-service-company/</link>
+					<comments>https://itsvit.com/blog/aws-infrastructure-deployment-ci-cd-event-service-company/#respond</comments>
+		
+		<dc:creator><![CDATA[Vladimir Fedak]]></dc:creator>
+		<pubDate>Mon, 09 Jul 2018 13:43:20 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[CI/CD]]></category>
+		<category><![CDATA[Continuous Delivery]]></category>
+		<category><![CDATA[Continuous Integration]]></category>
+		<guid isPermaLink="false">https://itsvit.com/?p=3441</guid>
+
+					<description><![CDATA[<p>Sometimes the small size of the app does not result in small workloads. One of IT Svit customers, an event service from London, UK, experienced tremendous workloads on their one-page web app. They wanted to improve the performance stability under heavy loads and IT Svit was happy to provide the AWS infrastructure design, implementation and CI/CD pipeline configuration.</p>
+The post <a href="https://itsvit.com/blog/aws-infrastructure-deployment-ci-cd-event-service-company/">AWS infrastructure deployment and CI/CD for a UK Event Service company</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></description>
+										<content:encoded><![CDATA[<p>Even one-page web apps can experience considerable workloads, especially in event service industry. Our customer wanted to improve the stability and security of their app.<br />
+<span id="more-3441"></span></p>
+<p>The client, a London-based event service agency, had a one-page web app deployed to some on-prem infrastructure. However, the app performance under workload was sub-par and the company wanted to leverage the cloud infrastructure to solve this problem.</p>
+<blockquote style="background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px;"><p><em><b>“We required assistance from people who were qualified and skilled in infrastructure, support, and management to help us bridge the gap from our old system to our new platform.”</b></em></p></blockquote>
+<p>They found IT Svit through Upwork and understood we have all the right skills and were able to meet their budget limitations. The work began in the November of 2017 and the main portion was complete in a month, while the technical support is still ongoing. The customer was completely satisfied with our services, attitude, workflows and the outcomes of the project.</p>
+<blockquote style="background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px;"><p><em><b>“I really appreciated their willingness, attentiveness, and the availability they made for us.”</b></em></p></blockquote>
+<p><a href="https://itsvit.com/our-services/devops-service-provider/" target="_blank" rel="nofollow noopener noreferrer">IT Svit DevOps team</a> designed and implemented the required AWS cloud infrastructure for the app to ensure load balancing, resilience, and effective resource allocation. We leveraged the AWS services along with <a href="https://itsvit.com/blog/what-is-terraform-and-why-it-rocks/" target="_blank" rel="nofollow noopener noreferrer">Terraform</a>, <a href="https://itsvit.com/blog/docker-kubernetes-till-death-us-part/" target="_blank" rel="nofollow noopener noreferrer">Kubernetes, and Docker</a> containers. We have also built a CI/CD pipeline for automated update testing, building and pushing to production the new app versions.</p>
+<blockquote style="background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px;"><p><em><b>“We were struggling with site stability and with maintaining security. IT Svit’s work to implement best practices and tools has given us the site stability we now have.”</b></em></p></blockquote>
+<p>The full review is available in the widget below, please use the red arrows on the sides to navigate the reviews.</p>
+<div class="clutch-widget" data-url="https://clutch.co" data-widget-type="4" data-expandifr="true" data-height="auto" data-snippets="true" data-clutchcompany-id="79983"></div>
+<p>Do you also want to improve the security, efficiency, and performance of your IT operations? <a href="https://itsvit.com/contacts/" target="_blank" rel="nofollow noopener noreferrer">IT Svit is ready to help</a>!</p>The post <a href="https://itsvit.com/blog/aws-infrastructure-deployment-ci-cd-event-service-company/">AWS infrastructure deployment and CI/CD for a UK Event Service company</a> first appeared on <a href="https://itsvit.com">IT Svit</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://itsvit.com/blog/aws-infrastructure-deployment-ci-cd-event-service-company/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

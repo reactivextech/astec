@@ -1,6 +1,37 @@
-Rojo
+//COLORES Web
+/* ROJO */
 #d92525
 #ff2e2e
-
-Azul
+/* AZUL */
 #002a54
+
+
+- Inicio:
+ - Intro:
+    - Servicios
+ - Habilidades:
+    - Sistemas Administrativos
+    - Soporte
+    - Software
+    - Hardware
+    - Potencia y Protección de UPS
+    - Migración e Infraestructura
+ - ProfitPlus
+ - Casos de exito
+ - Contacto
+
+- Habilidades:
+
+- Nosotros
+
+- Servicios:
+  - Servicios Principales
+  - Servicios Adicionales
+
+- Industrias
+
+- Soporte
+
+- Contacto
+
+- Botón WhatsApp -> Soporte

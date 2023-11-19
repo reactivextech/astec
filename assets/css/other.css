@@ -1,5 +1,3 @@
-/* Safari hack */
-
 .wpcf7-display-none{
     display: none !important;
 }
@@ -32,17 +30,15 @@
     padding-top: 40px;
 }
 #closing_popup_wrapper .wpcf7-mail-sent-ok::before{
-     content: url("../img/little_icon/success_form.svg");
-     width: 70px;
-     height: 70px;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     margin-left: -40px;
-     margin-top: -105px;
- }
-
-
+    content: url("../img/little_icon/success_form.svg");
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -105px;
+}
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
     footer {
@@ -65,8 +61,6 @@
         }
     }
 }}
-
-
 .wpcf7 form .checkbox_privacy {
     display: -webkit-box;
     display: -moz-box;
@@ -75,24 +69,20 @@
     display: flex;
     margin-top: 22px;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy {
     width: auto;
     margin-right: 8px;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item {
     display: flex;
     margin: 0;
     padding: 0;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item input[type="checkbox"]:checked,
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item input[type="checkbox"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item input[type="checkbox"]:checked + .wpcf7-list-item-label,
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item input[type="checkbox"]:not(:checked) + .wpcf7-list-item-label {
     display: inline-block;
@@ -106,7 +96,6 @@
     line-height: 20px;
     cursor: pointer;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item input[type="checkbox"]:checked + .wpcf7-list-item-label:before,
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item input[type="checkbox"]:not(:checked) + .wpcf7-list-item-label:before {
     content: '\f00c';
@@ -121,37 +110,30 @@
     left: 1px;
     transition: 0.3s;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item input[type="checkbox"]:not(:checked) + .wpcf7-list-item-label:before {
     opacity: 0;
     transition: 0.3s;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-list-item input[type="checkbox"]:checked + .wpcf7-list-item-label:before {
     opacity: 1;
     transition: 0.3s;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-not-valid {
     background-color: transparent !important;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-not-valid .wpcf7-list-item-label {
     background: #FFE4D9 !important;
     border: 1px solid #FFE4D9 !important;
     transition: 0.3s;
 }
-
 .wpcf7 form .checkbox_privacy .your-privacy .wpcf7-not-valid-tip {
     display: none !important;
 }
-
 .wpcf7 form .checkbox_privacy .description_checkbox {
     font-size: 14px;
     color: #333333;
     line-height: 18px;
 }
-
 .wpcf7 form .checkbox_privacy .wpcf7-mail-sent-ok {
     position: absolute;
     width: 100%;
@@ -180,7 +162,6 @@
     text-align: center;
     padding-top: 40px;
 }
-
 .wpcf7 form .checkbox_privacy .wpcf7-mail-sent-ok:before {
     content: url("../img/little_icon/success_form.svg");
     width: 70px;
@@ -191,25 +172,20 @@
     margin-left: -40px;
     margin-top: -110px;
 }
-
 #contact_us_page .wpcf7 form .checkbox_privacy .description_checkbox {
     font-size: 14px;
     color: #ffff;
     line-height: 18px;
 }
-
 #contact_us_page .wpcf7 form .checkbox_privacy .description_checkbox a {
     color: #FF6633;;
 }
-
 #closing_popup_wrapper img{
     height: 100%;
 }
-
 #closing_popup_wrapper > div.wrapper_ca {
     max-height: 550px;
 }
-
 img[data-lazy-src] {
     /* we set the opacity to 0 */
     opacity: 0;
@@ -223,7 +199,6 @@ img.lazyloaded {
     /* we set the opacity to 1 to do the magic */
     opacity: 1;
 }
-
 .offer_vacancy{
     text-align: center;
     display: flex;
@@ -231,7 +206,6 @@ img.lazyloaded {
     justify-content: center;
     cursor: pointer;
 }
-
 .offer_vacancy p {
     margin:0;
     font-size: 20px;
@@ -239,67 +213,48 @@ img.lazyloaded {
     color: #333333;
     font-weight: normal;
 }
-
 .offer_vacancy .button {
     color: #2072d3;
 }
-
 .modal-offer-vacancy{
     display: none;
 }
-
 .modal-offer-vacancy.showing{
 
 }
-
 .modal-offer-vacancy .wrapper_popup_contact{
     max-width: 320px;
 }
 .modal.modal-offer-vacancy .popup-container .popup-window .popup-form{
     max-width: 368px;
 }
-
 .modal-offer-vacancy form textarea{
     height:70px;
 }
-
 .modal.modal-offer-vacancy .popup-container .popup-window .popup-form .wrapper_popup_contact label{
     margin-top:16px;
 }
-
 .modal.modal-offer-vacancy .popup-container .popup-window .popup-form .wrapper_popup_contact label.choose_file{
     margin-top:30px;
 }
-
 .modal.modal-offer-vacancy  .popup-container .popup-window{
     max-height: 100%;
     align-items: flex-start;
 }
-
 .modal-offer-vacancy .wrapper_popup_contact form .upload_files .append_name_file {
     top: 0;
 }
-
 .modal.modal-offer-vacancy .popup-container .popup-window.success{
     max-height: 100%;
 }
-
 .page-template-contacts  .wpcf7-response-output{
     /*display: block !important;*/
 }
-
 @media screen and (max-width: 1200px) and (min-width: 992px){
-    header .top-menu-wrap .nav{
-        display: flex;
-    }
-
     header .top-menu-wrap .nav .right-menu .contact-button a {
-        padding: 5px 15px !important;
+        padding: 15px 15px !important;
     }
-
     header .top-menu-wrap .nav .menu li > a {
         white-space: nowrap;
     }
 }
-
-

@@ -25,13 +25,60 @@
 - Nosotros
 
 - Servicios:
-  - Servicios Principales
-  - Servicios Adicionales
+  -- Soporte y Asistencia TI
+  - Cableado Estructurado y Redes
+  - Venta y Mantenimiento de Computadores
+  - Venta de Software y Antivirus
+  - Desarrollo de Software
+  -- CCTV
+  -- Mesas de Ayuda TI
+  -- Biometría y Control de Acceso
+  - Soporte Técnico UPS's
+  - La Multitarea en las Empresas
+  -- Help Desk
+  - Soporte a la Infraestructura Tecnologica Bancaria
+  -- Outsourcing TI
 
-- Industrias
+- Industrias:
+   - Manufactura
+   - Financiera
+   - Retail
+   - Salud
 
 - Soporte
 
 - Contacto
 
 - Botón WhatsApp -> Soporte
+
+
+https://astec-ca.com/
+- Soporte remoto y de campo
+- Migración e infraestructura
+- Potencia y protyección de UPS
+- Soporte de plataforma ProfitPlus
+- Outsourcing de contabilidad
+- Outsourcing de nomina
+- Software:
+   A través del uso del software se puede asegurar que su negocio no sólo tenga un giro más exitoso, sino que además exista un ahorro considerable en tiempos y mayores ingresos.
+- Hardware:
+   El Hardware empresarial, ha evolucionado en los últimos tiempos, por lo que es muy importante dotar su empresa de las últimas novedades que le permitan producir más con menos esfuerzo y en un menor tiempo, lo que le permite ser más competitivos en el entorno actual.
+
+https://www.itservicios-latam.com/index.php/it-services/
+- Consultaría Especializada:
+   Nuestros ingenieros, además de estar certificados en todas las soluciones que manejamos, están certificados en diversas tecnologías y mejores prácticas de seguridad, lo cual nos permite asesorar a nuestros clientes con consultorías especializadas, las cuales enfocamos y personalizamos a los requerimientos y necesidades de nuestros clientes.
+- Servicios Profesionales Implementación y Soporte:
+   Como integradores en el área de seguridad de la información, virtualización e infraestructura, nuestros proyectos son llave en mano, van desde el diseño hasta la implementación, puesta en marcha y soporte post implementación, por lo que para todas las soluciones que integramos contamos con ingeniería certificada que garantizan el éxito de los proyectos de nuestros clientes.
+- Servicios Profesionales de Gestión y Administración:
+   Con la escasez de Talento Humano especializado en el área de seguridad de la información y la rapidez en la evolución de las amenazas y las soluciones, es un reto el mantener las plataformas adquiridas y sacar total provecho de estas, nuestros servicios de gestión y administración permiten delegar estas tareas a nuestros ingenieros, ya sea en sitio o desde nuestro centro de soporte
+- Leasing y Administración Delegada:
+   Estamos en la capacidad de ofrecer nuestras soluciones como servicio, armar una solución integrada para cumplir con su requerimiento o necesidad, incluyendo la operación de la misma, en la modalidad de servicio con pagos mensuales.
+
+https://www.plannet.mx/
+- Consultaría
+- Analisis de Datos
+Industrias:
+   - Manufactura
+   - Financiera
+   - Retail
+   - Salud

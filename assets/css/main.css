@@ -14839,6 +14839,7 @@ body.post-type-archive-testimonials {
 .our_client_about_us .container_list_our_clients .list_our_clients {
 	flex-wrap: wrap;
 	padding-left: 0;
+	gap: 2rem;
 }
 .our_client_about_us
 	.container_list_our_clients

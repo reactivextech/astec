@@ -937,18 +937,18 @@ form br {
 
 /* Style for banner (Top pages) */
 .blue_banner {
-	background-color: #05356f;
-	padding-top: 65px;
-	padding-bottom: 68px;
+	background-color: var(--color-blue);
+	padding-top: 190px;
+	padding-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+	.blue_banner {
+		padding-top: 130px;
+	}
 }
 @media screen and (max-width: 991px) {
 	.blue_banner {
-		padding-top: 0;
-	}
-}
-@media screen and (max-width: 600px) {
-	.blue_banner {
-		padding-top: 20px;
+		padding-top: 50px;
 	}
 }
 .blue_banner h1 {
@@ -957,20 +957,6 @@ form br {
 }
 .blue_banner .description_page p {
 	color: rgba(255, 255, 255, 0.7);
-}
-
-.banner_upper {
-	padding-bottom: 50px;
-}
-@media screen and (max-width: 991px) {
-	.banner_upper {
-		padding-top: 50px;
-	}
-}
-@media screen and (max-width: 768px) {
-	.banner_upper {
-		padding-top: 0;
-	}
 }
 .banner_upper h1 {
 	color: var(--color-white);
@@ -989,7 +975,6 @@ form br {
 	margin: 0;
 	color: rgba(255, 255, 255, 0.7);
 }
-
 .standard {
 	padding-top: 60px;
 	padding-bottom: 160px;
@@ -6089,7 +6074,7 @@ header.mobile .close-dropdown-menu {
 }
 
 #services_content {
-	background-color: #05356f;
+	background-color: var(--color-blue);
 }
 
 .services_banner {

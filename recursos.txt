@@ -25,19 +25,20 @@
 - Nosotros
 
 - Servicios:
-  -- Soporte y Asistencia TI
-  - Cableado Estructurado y Redes
-  - Venta y Mantenimiento de Computadores
-  - Venta de Software y Antivirus
-  - Desarrollo de Software
-  -- CCTV
-  -- Mesas de Ayuda TI
-  -- Biometría y Control de Acceso
-  - Soporte Técnico UPS's
-  - La Multitarea en las Empresas
-  -- Help Desk
-  - Soporte a la Infraestructura Tecnologica Bancaria
-  -- Outsourcing TI
+   -- Soporte y Asistencia Técnica
+   -- Cableado Estructurado y Redes
+   -- Venta y Mantenimiento de Computadores
+   -- Venta de Software y Antivirus
+   -- Desarrollo de Software
+   -- CCTV
+   -- Biometría y Control de Acceso
+   -- Soporte Técnico UPS's
+   -- Outsourcing TI:
+         Objetivos del Outsourcing: Reducción de gastos directos, basados en la subcontratación de servicios que no afecten la actividad principal de la empresa.
+   -- Soporte a la Infraestructura Tecnologica Bancaria
+   -- Mesas de Ayuda TI
+   -- La Multitarea en las Empresas
+   -- Help Desk
 
 - Industrias:
    - Manufactura
